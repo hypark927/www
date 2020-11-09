@@ -1,0 +1,36 @@
+#content .content_area{overflow: hidden}
+
+#content .nav_box{ background: #f4f1f1}
+#content .nav_box .tab_menu{width: 100%; margin-bottom: 90px}
+#content .nav_box .tab_menu ul{overflow: hidden; width: 920px; margin: 0 auto; }
+#content .nav_box .tab_menu ul li{float: left; display: block; width: 25%; background: #f4f1f1; font-size: 18px; font-family: 'Nanum Gothic'; color: #333; text-align: center; position: relative}
+#content .nav_box .tab_menu ul li::after{content: ""; width: 1px; height: 61px; background: #fff; position: absolute; left: 0; top: 0} 
+#content .nav_box .tab_menu a{display: block; padding: 20px 0;}
+#content .nav_box .tab_menu a:hover{background: #333; color: #fff; font-weight: 700}
+
+/* 상단에 고정 sticky menu */
+#content .navOn{position: fixed; width: 100%; height: 61px; z-index:10; left:0; top: 0;}
+/* 메뉴 활성화  scroll spy */
+#content .nav_box ul li a.spy{background: #333; color: #fff; font-weight: 700}
+
+
+#content .history_wrap{width: 1100px; margin: 0 auto}
+#content .year_slogan{position: relative}
+#content .year_slogan p{font-size: 25px; font-family: 'Nanum Myeongjo'; color: #999; line-height: 1.7em}
+#content .year_slogan p:nth-of-type(1){font-family: 'Nanum Gothic'; color: #666; font-weight: 700}
+#content .year_slogan p:nth-of-type(2){font-size: 30px; margin-bottom: 30px}
+#content .year_slogan p span{color: #ff9900}
+#content .year_slogan p:nth-of-type(2)::after{content: ""; width: 200px; height: 3px; background: #ff9900; position: absolute; left: 0; top: 122px; z-index: 1}
+
+#content section{border-top: 1px solid #999; border-bottom: 1px solid #999; margin-bottom: 150px; overflow: hidden; position: relative; padding-top: 15px;}
+#content .y2000{background: url(../images/content2/bg_year1-1.jpg) 0 90px no-repeat; background-size: 185px}
+#content .y1994{background: url(../images/content2/bg_year2-1.jpg) 0 90px no-repeat; background-size: 185px}
+#content .y1986{background: url(../images/content2/bg_year3-1.jpg) 0 90px no-repeat; background-size: 185px}
+#content .y1970{background: url(../images/content2/bg_year4-1.jpg) 0 90px no-repeat; background-size: 185px}
+
+#content section h3{font-size: 35px; font-family: 'Nanum Gothic'; color: #ff9900; float: left; margin-right: 15px; position: absolute}
+#content section dl{margin: 7px 0 10px 210px; line-height: 2.3em}
+#content section dt{float: left; font-size: 23px; font-family: 'Nanum Gothic'; color: #999; font-weight: 400; margin-bottom: 15px; }
+#content section dd{font-size: 14px; font-family: '돋움'; color: #333; margin : 0 0 15px 130px}
+#content section dd:hover{color: #ff9900}
+.text{position: fixed; right:0; top: 0; font-size: 50px; z-index: 100}

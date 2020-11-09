@@ -1,0 +1,392 @@
+/* mobile notice css */
+#content{line-height: 1.8em}
+#content h2{width:100%; height: ; background: url(../../images/sub1_1/sub1ttlx2.jpg) center no-repeat; background-size: cover; text-align: center; margin-top: 50px; padding: 40px 0; color: #fff; font-family: 'Nanum Gothic'; font-size: 26px}
+
+/* 공지 게시판 */
+.content_area{overflow: hidden; padding-bottom: 50px; margin: 0 auto; width: 100%;}
+#content .notice_wrap{width:90%; float:left; margin-left: 5%;}
+
+/* list css */
+.list_search {overflow: hidden}
+.list_search .search_con p{color: #666; font-size: 14px; margin-bottom: 10px;}
+.list_search .search_con{margin: 30px 0; overflow: hidden;}
+.list_search .search_con li{float: left; margin-right: 7px;}
+.list_search .search_con li:nth-of-type(1) .fas {font-weight: 900; font-size: 22px; color: #ccc; margin-right: 7px;}
+.list_search .search_con li:nth-of-type(1) select{
+    width: 65px;
+    border: solid 1px #ccc;
+    font-size: 14px;
+    padding: 6px 7.5px;
+	text-align: center
+}
+
+.list_search .search_con li:nth-of-type(2){
+	margin-left: 5px;
+}
+
+.list_search .search_con li:nth-of-type(2) input {
+    width: 175px;
+    border: solid 1px #ccc;
+    font-size: 14px;
+    padding: 6px;
+}
+
+.list_search .search_con li:nth-of-type(3) {	
+	margin: 1px 0 0 5px;
+}
+
+.list_search .search_con li:nth-of-type(3) input {
+    padding: 6.5px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    background: #333;
+    border: 0;
+    color: #fff;
+}
+
+.list_search .search_con li:nth-of-type(3) input:hover{
+    background: #333;    
+}
+
+.list_search ul.search_bottom{overflow: hidden; width: 100%}
+.list_search ul.search_bottom .scale_view {border: solid 1px #ccc; font-size: 14px; padding: 6px 18px; margin-bottom: 10px;}
+.list_search ul.search_bottom>li{float: left; margin-right: 2%}
+.list_search ul.search_bottom li p{padding: 6px 0 0 6px}
+
+.list_content {
+    font-size: 16px;
+	border-top: 3px solid #ff9900;
+}
+
+.list_content .list_item:hover{
+	background: #f4f1f1;
+}
+
+.list_item {   
+    border-bottom: solid 1px #ccc;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.list_item .list_item1 {
+    float: left;
+    width: 15%;
+    padding-top: 115px;
+    text-align: center;
+}
+
+.list_item .list_item2 {
+    float: left;
+    width: 75%;
+    padding: 16px;
+}
+
+.list_item2 img {
+    /* float: left; */
+    width: 200px;
+    height: 200px;
+    margin: 20px 0 10px 30px;
+}
+
+.list_item .list_item2 span {
+    width: 100%;
+    display: block;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+	text-align: center;
+}
+
+.list_item2 p.ttl_con {    
+    overflow: hidden;
+    line-height: 1.5em;
+}
+
+.list_item .list_item3 {
+    float: left;
+    width: 30%;
+	color: #888;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.list_item .list_item4 {
+    float: left;
+	color: #888;
+    padding-bottom: 25px;
+    width: 45%;
+    text-align: center;
+}
+
+.list_item .list_item5 {
+    float: left;
+	color: #888;
+    padding-bottom: 25px;
+    width: 24%;
+    text-align: center;
+}
+
+#page_button {
+	margin-top:20px;
+}
+
+#page_num {
+    /* float: left; */
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    color: #666;
+}
+
+#page_num>a,#page_num>b{
+    display: inline-block;
+    width: 20px;  
+    padding: 5px 3px;
+	font-size: 15px;
+	font-weight: 700;
+  /*  border-bottom: 2px solid orange; */	
+}
+
+
+.button {
+	text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.button>a {
+    border: 0;
+    width: 50px;
+    color: #fff;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.button a:hover{
+	background: #ff9900;
+}
+
+
+/* write_form css */
+
+
+#write_form_title {
+	margin-top:20px;
+	margin-bottom: 5px;
+	width:99%;
+	height:20px;
+	text-align:center;
+	padding: 20px 10px;
+	/*   border-top: solid 1px #ff9900; */
+	background:#f4f1f1;
+	font-size: 20px;
+    font-weight: 700;
+    font-family: 'Nanum Gothic';
+}
+
+#write_form {
+	margin-top:10px;
+	font-size: 16px;
+}
+
+#write_form .write_row1 {
+	overflow: hidden;  
+    padding: 10px 0 5px 0;
+}
+
+#write_form .write_row2 {
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+#write_form .write_row3 {
+	padding: 5px 0 10px 0;
+	overflow: hidden;
+}
+
+.write_line {
+    width:99%; 
+	border-bottom:solid 1px #cccccc;
+}
+
+#write_form .col1 {
+	float:left;
+	width:130px;
+	text-align:center;
+	padding: 12px;
+	background:#f4f1f1;
+}
+
+#write_form .write_row3 .col1 {
+    height: 170px;
+    padding-top: 170px;
+}
+
+#write_form .col2 {
+	float:left;
+	margin-left: 8px;
+	margin-top:2px;
+}
+
+#write_form .write_row1 li{
+    padding: 12px;
+}
+
+#write_form .write_row1 .col2 {
+	float:left;	
+	overflow: hidden;
+	font-size: 16px;
+}
+
+#write_form .write_row1 .col3 {
+	float:left;
+/*	margin-top: 10px;*/ 
+	margin-left:140px;
+}
+
+.write_row2 .col2 input {
+    width: 1000px;
+    /* height: 17px; */
+    padding: 10px;
+    font-size: 15px;
+    border: solid 1px #cccccc;
+}
+
+.write_row3 .col2 textarea {
+    width: 1000px;
+	/* margin-top: 2px; */
+    border: solid 1px #cccccc;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+
+/* 이미지첨부 */
+
+.write_row4{width: 100%; overflow: hidden;}
+.write_row4 .col1{}
+.write_row4 .col2{width: 400px; padding: 6px;}
+.write_row4 .col2 input{width: 400px;}
+.write_row4 .delete_ok {overflow: hidden; padding: 15px 7px; font-size: 14px;}
+
+
+#write_button {
+	margin-top:15px;
+	text-align:center;
+}
+
+#write_button>input {
+    border: 0;
+    color: #fff;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 5px;
+    /* width: 70px; */
+    font-size: 16px; 
+ /*	margin-right: 10px; */
+}
+
+#write_button>a {
+    color: #fff;
+    background: #333;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;	
+}
+
+#write_button a:hover, #write_button>input:hover{
+	background: #ff9900;
+	color: #fff;
+}
+
+
+
+/* view.php css */
+
+
+.view_title {
+    /* height: 20px; */
+    padding: 20px 10px;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    background-color: #f4f1f1;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Nanum Gothic';
+	overflow: hidden;
+}
+
+.view_title dl {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.view_title dl dt {
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 20px;
+	margin-bottom: 25px;
+}
+
+.view_title dl dd{
+	color: #666;
+	float: left; 
+	width: 35%; 
+	text-align: center;
+	font-size: 15px;
+}
+
+.view_title dl dd:nth-of-type(3){
+	width: 30%; 
+}
+
+
+#view_content {
+	overflow: hidden;
+	box-sizing: border-box;
+	width:100%;
+	min-height:200px;
+	padding: 30px 35px;
+	overflow:hidden;
+	line-height:2em;
+	font-size: 16px;
+	border-bottom:solid 1px #ccc;
+	margin-bottom: 30px;
+	text-align: justify;
+}
+
+
+#view_button {
+	width:98%;
+	text-align:right;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+
+#view_button>a {    
+    color: #fff;
+    background: #333;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;	
+}
+
+#view_button a:hover{
+	background: #ff9900;
+	color: #fff;
+}
+
+
+/* modify_form.php css */
+
+#write_button #modifyOk{cursor: pointer}
+
+
+
+scale, select, input[type=button], input[type=submit], input[type=reset]{-webkit-appearance:none;}

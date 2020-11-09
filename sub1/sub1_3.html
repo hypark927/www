@@ -1,0 +1,161 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>국순당-오시는길</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="common/css/sub1common.css">
+    <link rel="stylesheet" href="css/content3.css">
+    
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f162006fa5fd6fe4369ea2e88b5b3d42"></script>
+    <script src="js/map.js"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/941ac268b7.js" crossorigin="anonymous"></script>
+        
+    <!--[if IE9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+</head>
+
+<body>
+    
+    
+     <? include "../common/sub_head.html" ?>
+ 
+<!-- 메인비주얼영역 --> 
+   <div class="visual">        
+      <div class="company_ttl">
+      <h3>회사소개</h3> 
+      <p>우리의 누룩(麴)으로 좋은술(醇)을 빚는 집(堂)</p>  
+      </div>
+      <img src="common/images/subvisual.jpg" alt=""> 
+   </div>        
+     
+<!-- 서브네비영역 -->       
+    <div class="subNav">
+           <ul>
+               <li>
+                   <a id="nav1" href="sub1_1.html">국순당개요</a>
+               </li>
+               <li>
+                   <a id="nav2" href="sub1_2.html">연혁</a>
+               </li>                   
+               <li>
+                   <a id="nav3" class="current" href="sub1_3.html">오시는길</a>
+               </li>
+           </ul>           
+    </div>
+   
+<!-- 본문콘텐츠영역 -->    
+    <article id="content">
+        
+        <div class="title_area">
+            <div class="lineMap">
+                <span>home </span>&gt;<span> 회사소개 </span>&gt;<strong> 오시는길</strong>
+            </div>
+            <div class="title_con">        
+                <h2>오시는길</h2>
+                <p>국순당 서울사무소에 오시는 길을 알려드립니다</p>
+            </div>   
+        </div>
+                      
+                                       
+        <div class="content_area">
+           
+            
+            <div id="mapSeoul"></div>
+            <h3><span><i class="fas fa-building"></i></span> 서울사무소</h3>       
+            <div class="map">                              
+                  <dl>
+                      <dt><i class="fas fa-map-marker-alt"></i><span>주소</span></dt>
+                      <dd>서울특별시 강남구 봉은사로 641</dd>
+                  </dl>
+                  <dl>
+                       <dt><i class="fas fa-phone"></i><span>전화번호</span></dt>
+                       <dd>02-513-8500</dd>
+                  </dl>
+                  <dl>
+                       <dt><i class="fas fa-fax"></i><span>팩스</span></dt>
+                       <dd>02-402-5210</dd>
+                  </dl>                
+            </div>
+            
+            
+            <div class="tbl_wrap">
+                <h3><span><i class="fas fa-subway"></i></span> 대중교통 이용시</h3>
+                <table class="traffic">
+                    <caption class="hidden">대중교통으로찾아오시는길</caption>
+                    <colgroup>
+                        <col style="width: 25%">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">하차지점</th>
+                            <th scope="col">오시는길</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                           <th scope="row">지하철 9호선 봉은사역에서 하차</th>
+                           <td><strong>4번출구</strong>에서 450M 직진</td>
+                         </tr>
+                         <tr>
+                            <th scope="row">지하철 2호선 삼성역에서 하차</th>
+                            <td><strong>7번출구</strong>에서 마을버스 ( <span><i class="fas fa-bus"></i></span> 1번 마을버스, 초록색 3417) 승차 &gt; 노블발렌티 웨딩홀 앞 하차</td>
+                         </tr>
+                    </tbody>
+                </table>    
+            </div>                 
+                                
+             <div class="tbl_wrap tbl2">
+                <h3><span><i class="fas fa-car"></i></span> 자가용 이용시</h3>
+                <table class="car">
+                    <caption class="hidden">자가용으로찾아오시는길</caption>
+                    <colgroup>
+                        <col style="width: 25%">
+                        <col>                       
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">진입 고속도로</th>
+                            <th scope="col">오시는길</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                           <th scope="row">경부고속도로</th>
+                           <td>반포 IC 종합운동장 방향으로 직진, 교보생명 &gt; 차병원 &gt; 봉은사 &gt; 아셈타워(직진) &gt; 국순당</td>
+                         </tr>
+                         <tr>
+                            <th scope="row">서울 서부.강북 지역</th>
+                            <td>올림픽대로 영동대교 남단 입체교차로에서 무역센터 방향, 홍실아파트 &gt; 아셈타워 앞 봉은사 사거리에서 자회전 &gt; 국순당</td>
+                         </tr>
+                         <tr>
+                           <th scope="row">서울 동남부 지역</th>
+                           <td>2호선 삼성역 무역센터 교차로에서 영동대교 방향, 아셈타워 앞 봉은사 사거리에서 우회전 &gt; 국순당</td>
+                         </tr>
+                    </tbody>
+                </table>    
+            </div> 
+                                                       
+                                            
+        </div>        
+    </article>
+    
+    
+     <? include "../common/sub_foot.html" ?>
+    
+    
+</body>
+</html>

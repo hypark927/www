@@ -1,0 +1,12 @@
+#content .faq{width: 1000px; border-bottom: 1px solid #ccc; font-size:12px; margin: 0 auto; margin-bottom:  100px}  
+#content .faq .hgroup{position:relative; font-family: 'Nanum Gothic'; color: #333; font-size: 25px; padding-left: 20px; margin-bottom: 25px}  
+#content .faq .hgroup .all{position:absolute; top:5px; right:10px; color:#666; font-size: 16px}  
+#content .faq ul{}  
+#content .faq .q{border-top: 1px solid #ccc; position: relative; font-size: 16px; background: #fcf4e8;}  
+#content .faq .q span{display: block; font-size: 25px; color: #333; position: absolute; right: 35px; top: 20px}
+#content .faq .q a.trigger{display: block; padding: 25px 35px; background: #fcf4e8; color: #333; text-align: left;}  
+#content .faq .hide .q a.trigger{font-weight: normal; background: none}  
+#content .faq .q a.trigger:hover,  
+#content .faq .q a.trigger:active,  
+#content .faq .q a.trigger:focus{background: #feeddd; color: #000}  
+#content .faq .a{display: none; padding: 30px 35px; line-height: 2em; overflow: hidden; font-size: 15px; background: #fafafa; text-align: justify;} 

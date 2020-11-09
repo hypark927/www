@@ -1,0 +1,85 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>국순당-백세주마을</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="common/css/sub5common.css">
+    <link rel="stylesheet" href="css/content2.css">
+    
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/941ac268b7.js" crossorigin="anonymous"></script>
+    <!--[if IE9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+</head>
+
+<body>
+ 
+ <? include "../common/sub_head.html" ?>   
+ <? $_GET['num']=2;
+      include "common/sub_nav.html"; 
+ ?>
+        
+   
+<!-- 본문콘텐츠영역 -->
+    
+    <article id="content">
+        
+        <div class="title_area">
+            <div class="lineMap">
+                <span>home </span>&gt;<span> 백세주마을 </span>&gt;<strong> 주류 메뉴</strong>
+            </div>
+            <div class="title_con">        
+                <h2>주류 메뉴</h2>
+                <p>좋은술이 함께하는 여유로운 곳, 마음과 마음이 따뜻해지는 곳 백세주마을의 주류 메뉴를 소개합니다.</p>
+            </div>   
+        </div>
+                                                             
+    <div class="content_area">
+                     
+     <div class="intro">
+       
+        <dl>  
+            <dt>백세주 샘플러</dt>
+            <dd class="price">7,900원</dd>
+            <dd>다양한 백세주류 맛보기</dd>
+            <dd>백세주 | 생백세주 | 강장백세주 | 자양백세주</dd>  
+            <dt>막걸리 샘플러</dt>
+             <dd class="price">6,900원</dd>
+            <dd>명품 막걸리의 특별한 체험</dd>
+            <dd>생막걸리 | 유산균 막걸리 | 옛날막걸리 | 복분자 막걸리</dd>  
+            <dt>법고창신 샘플러</dt>
+             <dd class="price">12,900원</dd>
+            <dd>한 잔 만으로도 전해지는 품격있는 술</dd>
+            <dd>자주 | 송절주 | 청감주 | 이화주</dd>                     
+        </dl> 
+        
+       </div>  
+       
+        <div id="bvAlMenu">
+         <!-- 백세주마을 주류 메뉴 -->
+         
+        </div>               
+        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+                                       
+      </div>        
+    </article>
+    
+    
+ <? include "../common/sub_foot.html" ?>
+ <script src="js/al_json.js"></script>
+    
+</body>
+</html>

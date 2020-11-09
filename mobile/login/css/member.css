@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* font-family: 'Nanum Gothic' ; 'Nanum Myeongjo'*/ 
+
+/* CSS Reset */
+
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%}
+
+body{font-family: "돋움", Dotum,"굴림",Gulim, sans-serif; font-size: 14px; color: #333}
+a{color: #333; text-decoration: none}
+
+.hidden{display: block; position: absolute; left: -1000%; width: 1px; height: 1px; overflow: hidden; color: #fff}
+input{border: 0; background: none}
+
+/* 로그인 영역 */
+body{background: #f4f1f1}
+.wrap {width: 80%; margin: 0 auto; overflow: hidden; font-size: 15px; padding: 30px 15px; background: #fff; margin-top: 40px; border: 1px solid #ccc; border-radius: 10px;}
+.wrap h1 {display: block; width: 120px; margin: 0 auto; margin-bottom: 20px;}
+.login_wrap{overflow: hidden; width: 100%; text-align: center; margin: 0 auto}
+.login_wrap .login_form{margin-bottom: 30px}
+.login_wrap input{border: 0; padding: 15px; font-size: 16px;}
+.login_form legend{color: #666; font-size: 18px; font-family: 'Nanum Myeongjo'; margin-bottom: 25px;}
+#loginId,#loginPw{border-bottom: 1px solid #ccc; width: 87%; margin-bottom: 10px}
+#loginPw{margin-bottom: 25px}
+.login_form #loginButton{width: 95%; background: #ff9900; color: #fff; border-radius: 5px; padding: 15px 0}
+.login_wrap .join_btn p{margin-bottom: 10px; text-align: center; color: #666}
+.login_wrap .join_btn a{display: block; width: 95%; background: #333; color: #fff; border-radius: 5px; padding: 15px 0; text-align: center; margin-left: 2.5%; font-size: 15px}
+
+
+
+/* 회원정보수정 */
+
+.join_wrap{width: 80%; margin: 0 auto; overflow:hidden; font-size: 16px;padding: 30px 15px; background: #fff; margin-top: 40px; margin-bottom: 40px; border: 1px solid #ccc; border-radius: 10px} 
+.join_wrap h1{display: block; width: 120px; margin: 0 auto; margin-bottom: 20px;}
+.join_wrap h2{color: #666; font-size: 18px; font-family: 'Nanum Myeongjo'; text-align: center; margin-bottom: 25px;}
+.join_form{overflow: hidden; width: 100%; }
+.join_wrap ul{overflow: hidden; margin-bottom: 10px}
+.join_wrap ul li input{font-size: 16px; padding: 18px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 3px; width: 86%}
+.join_wrap ul li input:focus,.join_form ul li input:active{outline: 1px solid #ff9900; outline-offset: -1px}
+.join_wrap li{position: relative;}
+.join_wrap li span{position: absolute; width: 160px; right: 10px; top: 9px; font-size: 13px}
+.join_form .phone select {
+    width: 29%;
+    padding: 15px;
+    font-size: 16px;
+}
+.join_form .phone input {
+    font-size: 16px;
+    padding: 16px;
+    width: 17%;
+}
+.join_form .email input{padding: 20px; width: 85%;}
+.join_form .email input:nth-of-type(1){width: 65%;}
+.join_form .email .email_gol{position: absolute; width: 15px; right: 19px; top: 17px; font-size: 21px;}
+.submit input{width: 100%; text-align: center; padding: 20px 0; float: left}
+.submit #submitGo {
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+	margin-bottom: 15px;
+}
+.submit .reset_form{background: #ccc; color: #333; border-radius: 5px;  font-size: 15px; }
+.modify_id,.modify_name{font-size: 16px; padding: 20px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 3px; width: 85%; font-weight: 700; background: #f4f1f1}
+
+
+select, input[type=button], input[type=submit], input[type=reset]{-webkit-appearance:none;}

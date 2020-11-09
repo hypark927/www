@@ -1,0 +1,22 @@
+/* font-family: 'Nanum Myeongjo' ; font-family: 'Nanum Gothic'*/
+#content{line-height: 1.8em}
+#content h2{background: url(../images/sub1_1/sub1ttlx2.jpg) center no-repeat; background-size: cover; text-align: center; margin-top: 50px; padding: 40px 0; color: #fff; font-family: 'Nanum Gothic'; font-size: 26px}
+#content .intro{background: #f4f2ef; text-align: center ; padding: 40px 15px; font-size: 15px; margin-bottom: 30px}
+#content .intro p:nth-of-type(1){font-family: 'Nanum Myeongjo'; color: #ff9900; font-size: 24px; margin-bottom: 26px}
+#content .intro p:nth-of-type(2){margin-bottom: 22px}
+
+#content section{padding: 15px}
+#content section .com_ttl{height: 190px; width: 100%; position: relative; margin-bottom: 20px}
+#content .com_ttl .txt{box-sizing: border-box; width: 100%; height: 75px; padding: 10px 0 0 20px; background: rgba(0,0,0,.4); position: absolute; left: 0; bottom: 0; color: #fff;}
+#content section .txt h3{font-family: 'Nanum Gothic'; font-size: 22px; }
+#content section .txt span{font-size: 14px; display: block;}
+#content section p{font-size: 14px; margin-bottom: 10px}
+#content section p:nth-of-type(2){margin-bottom: 25px}
+#content section ul{overflow: hidden;}
+#content section li{margin-bottom: 20px; clear: both; overflow: hidden}
+#content section li img{width: 70px; height: 55px;float: left; margin-right: 10px}
+#content section li>p{font-size: 13px; color: #666}
+
+#content section:nth-of-type(1) .com_ttl{background: url(../images/sub1_1/com01x2.jpg) center no-repeat; background-size: cover;}
+#content section:nth-of-type(2) .com_ttl{background: url(../images/sub1_1/com02x2.jpg) no-repeat; background-size: cover;}
+#content section:nth-of-type(3) .com_ttl{background: url(../images/sub1_1/com03x2.jpg) no-repeat; background-size: cover;}

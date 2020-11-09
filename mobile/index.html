@@ -1,0 +1,191 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content = "telephone=no">
+
+<title>국순당</title>
+
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/swiper_main.min.css">
+
+<script src="js/prefixfree.min.js"></script>
+<script src="https://kit.fontawesome.com/941ac268b7.js" crossorigin="anonymous"></script>
+
+
+ <script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+
+ <!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body>
+      
+    <? include "common_head.html" ?>
+      
+      <div class="main">
+        <!-- 비주얼영역 -->
+         <div class="flexslider">
+              <ul class="slides">
+                  <li><img src="images/visual01x2.jpg" alt=""></li>
+                  <li><img src="images/visual02x2.jpg" alt=""></li>
+                  <li><img src="images/visual03x2.jpg" alt=""></li>
+                  <li><img src="images/visual04x2.jpg" alt=""></li>
+              </ul>
+          </div> 
+      </div>
+      <article id="content">
+          <h2 class="hidden">본문콘텐츠영역</h2>
+          
+            <section class="company">
+                <h3 class="hidden">회사소개</h3>
+                <p>좋은 술의 고집 <br> 국순당</p>
+                <div class="com_inner">
+                    <img src="images/com01x2.jpg" alt="">
+                    <a href="sub1_1.html" title="회사소개페이지로이동"><img src="images/com03x3.jpg" alt="우리의누룩으로좋은술을빚는집"></a>
+                    <img src="images/com02x2.jpg" alt="">
+                </div>
+            </section>   
+            
+                          
+            <section class="product">
+               <div class="swiper-container">
+                  <div class="swiper-wrapper"> 
+                     <div class="swiper-slide">
+                        <div class="info">
+                          <h3>좋은술<span>백세주</span></h3>
+                         <p>양조전용쌀 설갱미와 좋은 누룩<br>엄선한 열두 가지 좋은 약재를 넣어 발효</p>
+                         <a href="sub2_1.html">백세주 전제품 보기 > </a>  
+                         </div>                   
+                         <img class="land1" src="images/pdt01x2.jpg" alt="">
+                     </div>                  
+                     <div class="swiper-slide">
+                        <div class="info">
+                          <h3>국순당<span>쌀막걸리</span></h3>
+                         <p>전통제법을 복원한 생쌀발효법<br>필수아미노산이 풍부하며 부드러운 맛</p>
+                         <a href="sub2_2.html">막걸리 전제품 보기 ></a>
+                          </div>  
+                         <img class="land2" src="images/pdt02x2.jpg" alt="">
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="info">
+                          <h3>복원주<span>법고창신</span></h3>
+                         <p>국순당의 ‘우리술 복원사업’으로 <br>다시 태어난 천 년 전 우리술</p>
+                         <a href="sub2_3.html">법고창신 전제품 보기 ></a>    
+                          </div>                  
+                         <img class="land3" src="images/pdt03x2.jpg" alt="">
+                     </div>              
+                       
+               </div> 
+                <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div> 
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>     
+              </div>  
+            </section>
+                        
+            <section class="alcohol">
+               <h3 class="hidden">우리술 이야기</h3>
+                <ul>
+                    <li>
+                        <p>국순당 술의 특징</p>
+                        <a href="sub3_1.html">설갱미와 생쌀발효법 ></a>
+                    </li>             
+                    <li>
+                        <p>우리술 교육</p>
+                        <a href="sub3_2.html">우리술 배움터 ></a>
+                    </li>
+                </ul>
+            </section>
+            <section class="bv">          
+                <div>
+                    <h3><a href="sub4_1.html">백세주마을</a></h3>  
+                    <p>좋은술이 함께하는 여유로운 곳, <br>마음과 마음이 따뜻해지는 곳 </p>
+                </div>
+            </section>
+            
+                        
+            
+      <!-- 공지사항 추가 -->   
+      <? include "./lib/func_mob.php"; ?>
+   <section class="news">
+     <div class="notice_con">
+      <h3>공지사항</h3>  
+      <div class="slide_box">
+        <div class="slide">
+          <ul>
+            <? latest_article1("notice", 4, 30); ?> 
+          </ul>
+        </div>
+      </div>
+     </div>
+    </section>
+            
+            
+      </article>
+      
+     
+    <? include "common_foot.html" ?>
+     
+     
+ <script src="js/script_main.js"></script>
+ 
+<script src="js/swiper-main.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>  
+   
+     
+   <!-- 플랙스슬라이더 호출코드 -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script>
+   
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+    });
+  </script> 
+   
+ 
+</body>
+</html>

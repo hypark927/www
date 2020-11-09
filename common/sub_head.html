@@ -1,0 +1,91 @@
+   
+<div id="skipNav">
+ <a href="#content">본문 바로가기</a>
+ <a href="#gnb">글로벌 네비게이션 바로가기</a>
+</div>
+
+  <div id="wrap">    
+<!-- 헤더 공통영역 -->
+     <header id="headerArea">
+        <div class="header_inner">
+         <h1 class="logo">
+             <a href="../index.html">국순당</a> 
+         </h1>
+       
+         <div class="top_menu">
+             <ul>
+<?
+    if(!$userid)  // 세션변수가 생성되어 있지 않으면  ( 로그인이 안된상태) 
+	{
+?>        
+                 <li>&nbsp;</li> 
+                 <li><a href="../login/login_form.php"><i class="fas fa-sign-in-alt"></i>로그인</a></li>
+                 <li><a href="../member/join.html"><i class="fas fa-file-signature"></i>회원가입</a></li>
+<?
+	}
+	else  // 세션변수가 생성되어 있으면 (로그인이 성공했으면)
+	{
+?>          
+            <li> <?=$usernick?> </li>
+            <li><a href="../login/logout.php"><i class="fas fa-sign-out-alt"></i>로그아웃</a></li>
+            <li><a href="../login/member_form_modify.php"><i class="fas fa-user-cog"></i>정보수정</a></li>
+<?
+	}
+?>               
+             </ul>
+         </div>
+         <nav id="gnb">
+              <h2 class="hidden">글로벌네비게이션영역</h2>
+             <ul class="dropdownmenu">
+                    <li class="m1 menu">
+                        <h3><a class="depth1" href="../sub1/sub1_1.html">회사소개</a></h3>
+                        <ul>
+                            <li><a href="../sub1/sub1_1.html">국순당개요</a></li>
+                            <li><a href="../sub1/sub1_2.html">연혁</a></li>
+                            <li><a href="../sub1/sub1_3.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li class="m2 menu">
+                        <h3><a class="depth1" href="../sub2/sub2_1.html">제품소개</a></h3>
+                        <ul>
+                            <li><a href="../sub2/sub2_1.html">백세주</a></li>
+                            <li><a href="../sub2/sub2_2.html">막걸리</a></li>
+                            <li><a href="../sub2/sub2_3.html">법고창신</a></li>
+                        </ul>
+                    </li>
+                    <li class="m3 menu">
+                        <h3><a class="depth1" href="../sub3/sub3_1.html">우리술 이야기</a></h3>
+                        <ul>
+                            <li><a href="../sub3/sub3_1.html">우리술 문화의 특징</a></li>
+                            <li><a href="../sub3/sub3_2.html">국순당 술의 특징</a></li>
+                            <li><a href="../sub3/sub3_3.html">우리술 교육</a></li>
+                        </ul>
+                    </li>
+                    <li class="m4 menu">
+                        <h3><a class="depth1" href="../sub4/sub4_1.html">인재채용</a></h3>
+                        <ul>
+                            <li><a href="../sub4/sub4_1.html">인재상</a></li>
+                            <li><a href="../sub4/sub4_2.html">복리후생</a></li>
+                            <li><a href="../sub4/sub4_3.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="m5 menu">
+                        <h3><a class="depth1" href="../sub5/sub5_1.html">백세주마을</a></h3>
+                        <ul>
+                            <li><a href="../sub5/sub5_1.html">백세주마을 소개</a></li>
+                            <li><a href="../sub5/sub5_2.html">주류 메뉴</a></li>
+                            <li><a href="../sub5/sub5_3.html">안주 메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li class="m6 menu">
+                        <h3><a class="depth1" href="../notice/list.php">홍보마당</a></h3>
+                        <ul>
+                            <li><a href="../notice/list.php">공지사항</a></li>
+                            <li><a href="../customer/list.php">고객의 소리</a></li>
+                            <li><a href="../sub6/sub6_3.html">광고 자료</a></li>
+                        </ul>
+                    </li>
+              </ul>
+          </nav>
+         </div>
+    </header>

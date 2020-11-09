@@ -1,0 +1,76 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>국순당-복리후생</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="common/css/sub4common.css">
+    <link rel="stylesheet" href="css/content2.css">
+    
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/941ac268b7.js" crossorigin="anonymous"></script>
+    <!--[if IE9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+</head>
+
+<body>
+    
+ <? include "../common/sub_head.html" ?>
+ <? $_GET['num']=2;
+      include "common/sub_nav.html"; 
+ ?>
+        
+   
+<!-- 본문콘텐츠영역 -->
+    
+    <article id="content">
+        
+        <div class="title_area">
+            <div class="lineMap">
+                <span>home </span>&gt;<span> 인재채용 </span>&gt;<strong> 복리후생</strong>
+            </div>
+            <div class="title_con">        
+                <h2>복리후생</h2>
+                <p>국순당은 임직원의 생활의 질을 향상시키기 위해 <br>다양한 복리후생제도를 기획/운영하고 있습니다.</p>
+            </div>   
+        </div>
+                                                             
+        <div class="content_area">
+                     
+               <div class="welfare">
+                 
+                   <ul>
+                       <li><img src="images/content2/welfare1.png" alt="">법정보험</li>
+                       <li><img src="images/content2/welfare2.png" alt="">주택자금융자 지원</li>
+                       <li><img src="images/content2/welfare3.png" alt="">자녀학자금 지원</li>
+                       <li><img src="images/content2/welfare4.png" alt="">종합건강검진 지원</li>
+                       <li><img src="images/content2/welfare5.png" alt="">자사제품 저가구입 지원</li>
+                       <li><img src="images/content2/welfare6.png" alt="">원격지 근무자 주택보조 지원</li>
+                       <li><img src="images/content2/welfare7.png" alt="">사내동호회 활동지원</li>
+                       <li><img src="images/content2/welfare8.png" alt="">콘도미니엄 운영</li>
+                       <li><img src="images/content2/welfare9.png" alt="">경조사 지원</li>
+                       <li><img src="images/content2/welfare10.png" alt="">기타 각종 포상제도 운영</li>
+                   </ul>
+                   
+                   
+               </div>         
+                              
+        </div>        
+    </article>
+    
+    
+      <? include "../common/sub_foot.html" ?>
+    
+</body>
+</html>

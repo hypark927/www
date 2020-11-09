@@ -1,0 +1,109 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>국순당-인재채용</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="common/css/sub4common.css">
+    <link rel="stylesheet" href="css/content1.css">
+    
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/941ac268b7.js" crossorigin="anonymous"></script>
+    <!--[if IE9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+</head>
+
+<body>
+ 
+ <? include "../common/sub_head.html" ?>
+ <? $_GET['num']=1;
+      include "common/sub_nav.html"; 
+ ?>
+   
+<!-- 본문콘텐츠영역 -->
+    
+    <article id="content">
+        
+        <div class="title_area">
+            <div class="lineMap">
+                <span>home </span>&gt;<span> 인재채용 </span>&gt;<strong> 인재상</strong>
+            </div>
+            <div class="title_con">        
+                <h2>인재상</h2>
+                <p>국순당은 주류 및 식음료 문화를 선도하는 기업으로서 <br>최고의 제품을 만들어 건강한 생활과 행복한 세상을 만드는데 기여할 인재를 찾습니다.</p>
+            </div>   
+        </div>
+                                                             
+        <div class="content_area">
+                     
+                      
+                       
+               <section class="talent">
+                   <h3>국순당 <br>인재상</h3>
+                   <dl>
+                       <dt>1등 정신</dt>
+                       <dd>모든 생각과 행동에서<br> 최고를 지향</dd>
+                   </dl>
+                   <dl>
+                       <dt>창의</dt>
+                       <dd>차별화된 생각과<br> 행동을 습관화</dd>
+                   </dl>
+                   <dl>
+                       <dt>도전</dt>
+                       <dd>현실에 안주하지 않고<br> 끊임없이 도전</dd>
+                   </dl>
+                   <dl>
+                       <dt>자기계발</dt>
+                       <dd>스스로 변화의 주체가 되어<br> 회사 경쟁력을 높임</dd>
+                   </dl>
+                   <dl>
+                       <dt>신뢰와 협력</dt>
+                       <dd>상호 이해와 신뢰를 <br>바탕으로 커뮤니케이션</dd>
+                   </dl>
+                                     
+               </section>
+                   
+                <section class="program">
+                <h3>교육 프로그램</h3>
+                    <p>21C 주류문화를 선도하는 도전적이며 창의적 <span>인재를 육성합니다.</span></p>
+                            
+                <dl>
+                    <dt>직능교육</dt>
+                    <dd>임직원의 업무와 관련된 다양한 외부 직능교육을 이수할 수 있도록 회사차원의 적극지원이 이루어지며, 이를 통해 업무능력 향상과 자기발전을 이룸</dd>
+                </dl>
+                <dl>
+                    <dt>계층교육</dt>
+                    <dd>계층별 집합교육을 통해 폭 넓은 지식의 습득과 팀웍 배양</dd>
+                </dl>
+                <dl>
+                    <dt>신규사원입문교육</dt>
+                    <dd>신규입사자들의 오리엔테이션, 조직적응, 회사와의 비전공유, 자기계발 계획수립 등에 동기부여</dd>
+                </dl>
+                <dl>
+                    <dt>테마교육</dt>
+                    <dd>특정 테마를 준비하고 외부강사를 초청한 강좌를 진행하여 임직원에게 다채로운 교육기회를 제공함</dd>
+                </dl>
+                                
+                </section>       
+                            
+        </div>        
+    </article>
+    
+    
+    
+  <? include "../common/sub_foot.html" ?>
+    
+    
+</body>
+</html>

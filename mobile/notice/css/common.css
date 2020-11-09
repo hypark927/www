@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* 모바일 코딩 필수 공통영역 */
+* {margin:0; padding:0; -webkit-text-size-adjust:none; }
+body { color:#333; font-size:14px; font-family:돋움, Dotum; }
+img, fieldset { border:0; vertical-align:top }
+ul, ol, li, dl { list-style:none; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal; }
+hr { display:none; }
+a { color:inherit; }
+a, a:link { color:#333; text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active { color:#333; text-decoration:none; }
+em, i, address { font-style:normal; font-weight:normal; }
+legend, caption { display:none; clear:both; }
+input, textarea, select, button, table { font-size:inherit; font-family:inherit; line-height:inherit; }
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input { border-radius:1px;}
+textarea { resize:none; }
+table{border-collapse: collapse}
+label { cursor:pointer; }
+.hidden,#skipNav{display: block; position: absolute; left: -1000%; top: 0; width: 1px; height: 1px; color: #fff; overflow: hidden}
+
+
+/* 전체 공통 */
+#wrap{ width:100%; position: relative; overflow:hidden}
+#wrap .box{width:100%; height:100%; background:#000; opacity:0.7; position:absolute; left:0; top:0; z-index:10; display:none}
+
+/* 헤더 공통 */
+#headerArea{width: 100%; height: 50px; position: fixed; left: 0; top: 0; background: #fff; z-index: 50}
+#headerArea h1{text-align: center; width: 100%; }
+#headerArea h1 img{width: 61px; height: 31px}
+#headerArea h1 a{display: block; padding: 9px 0}
+#headerArea a.btn{display: block; font-size: 25px; float: right; color: #ff9900; position: absolute; right: 0; top: 0; padding: 10px 15px}
+
+#gnb{clear:both; width:90%; position:absolute; right:-100%; top:50px; background:#f4f2ef; opacity:0; z-index:30}
+#gnb .mclose {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    font-size: 2.2em;
+    color: #333;
+}   
+#gnb ul.top_menu{width: 80%; margin: 10%; overflow: hidden;}
+#gnb .top_menu li:nth-of-type(1){text-align: center; padding: 15px 5px; font-weight: bold; font-size: 16px}
+#gnb .top_menu li:nth-of-type(2),.top_menu li:nth-of-type(3){width: 50%;float: left;}
+#gnb .top_menu li a{display: block; padding: 15px 5px; text-align: center}
+
+#gnb ul.mainMenu{width: 80%; margin: 10%; 0 0 10%; border-left: 1px solid #ccc; border-right: 1px solid #ccc; }
+#gnb .mainMenu li{border-top:1px solid #999; text-align:center; font-weight: bold;}
+#gnb .mainMenu li a{display: block; padding: 20px 0; font-size: 16px; color: #333} 
+#gnb .mainMenu li ul{background: #ccc; display: none; }     
+#gnb .mainMenu li ul a{color: #333; padding: 13px 0;}
+#gnb .last{border-bottom:1px solid #999}
+#gnb .first{border: none}
+
+
+
+
+/* 상단 탑메뉴 공통 */
+#footerArea a.top_move{display:block; width: 40px; height: 40px; background: #ff9900; border-radius: 20px; position: fixed; right: 0; margin-right: 10px; bottom:25px; z-index: 20; opacity: .7}      
+#footerArea a.top_move span{font-size: 14px; color: #fff; display: block; text-align: center; margin-top: 10px; }
+
+/* 푸터 공통 */
+#footerArea{width: 100%; background: #333; color: #ccc; font-size: 13px;}
+#footerArea a{color: #ccc}
+#footerArea .footer_top{width: 100%; height: 40px; padding-top: 5px; border-bottom: 1px solid #ccc}
+#footerArea .sns{width: 53%; float: left}
+#footerArea .sns ul{overflow: hidden; float: right; padding-right: 15px}
+#footerArea .sns li{float: left; text-align: center; }
+#footerArea .sns li a{font-size: 22px; display: block; padding: 7px 15px}
+
+#footerArea .family_site{float: right; width: 47%; position: relative}
+#footerArea .family_site a.arrow{display: block; padding: 10px 0 5px 0; font-size: 16px}
+#footerArea .family_site ul.aList{display: none; position: absolute; z-index:5; width: 100%; 
+    padding-left: 5px}
+#footerArea .family_site ul.aList a{font-size: 14px; display: block; background: #444; padding: 7px 5px; width:100%}
+
+#footerArea ul.utill{overflow: hidden; margin: 5px 0}
+#footerArea .utill li{float: left; width: 33.33%; text-align: center; position: relative}
+#footerArea .utill li a{display: block; padding: 8px 0;}
+#footerArea .utill li::after{position: absolute; content: "|"; display: block; color: #ccc; font-size: 14px; left: -3px; top: 8px}
+#footerArea .utill li:nth-of-type(1)::after{display: none}
+#footerArea .utill li a{display: block; font-weight: bold}
+#footerArea address, #footerArea>p{text-align: center; line-height: 1.5em}
+#footerArea p{padding: 7px 0}

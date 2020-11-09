@@ -1,0 +1,121 @@
+<? 
+	session_start(); 
+    @extract($_POST);
+    @extract($_GET);
+    @extract($_SESSION);
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>국순당-우리술 아름터 온라인신청</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../common/css/common.css">
+	<link rel="stylesheet" href="../sub3/common/css/sub3common.css">
+	<link rel="stylesheet" href="../sub3/css/content3.css">
+	
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/941ac268b7.js" crossorigin="anonymous"></script>
+   
+    <!--[if IE9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+   
+<? include "../common/sub_head.html" ?>   
+
+  
+<!-- 메인비주얼영역 --> 
+   <div class="visual">        
+      <div class="company_ttl">
+      <h3>우리술 이야기</h3> 
+      <p>소중한 우리술과 우리문화 국순당이 지켜갑니다</p>  
+      </div>
+      <img src="../sub3/common/images/subvisual.jpg" alt=""> 
+   </div>    
+  
+  
+<!-- 서브네비영역 --> 
+    <div class="subNav">
+           <ul>
+               <li>
+                   <a id="nav1" href="../sub3/sub3_1.html">우리술 문화의 특징</a>
+               </li>
+               <li>
+                   <a id="nav2" href="../sub3/sub3_2.html">국순당 술의 특징</a>
+               </li> 
+               <li>
+                   <a id="nav3" href="../sub3/sub3_3.html" class="current">우리술교육</a>
+               </li>
+           </ul>           
+    </div>
+        
+<!-- 본문콘텐츠 영역 -->
+       
+               
+                               
+ <article id="content">
+		<div class="title_area">
+            <div class="lineMap">
+                <span>home </span>&gt;<span> 우리술 이야기 </span>&gt;<span> 우리술 교육 </span>&gt;<strong> 온라인 신청</strong> 
+            </div>           
+            <div class="title_con">        
+                 <h2><span>우리술 아름터</span> 온라인 신청</h2>   
+            </div>  
+        </div>   
+   
+   <div class="content_area">
+      
+    <form name="sentMessage" id="contactForm" novalidate>
+    <div class="row control-group">
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label>신청자(단체) 이름</label>
+            <input type="text" class="form-control" placeholder="이름(단체명)" id="name" required data-validation-required-message="이름을 입력하세요!">
+            <p class="help-block text-danger"></p>
+        </div>
+    </div>
+    <div class="row control-group">
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label>신청자(단체) 메일주소</label>
+            <input type="email" class="form-control" placeholder="Email 주소 (예시: abc@domail.com)" id="email" required data-validation-required-message="이메일 주소를 입력하세요!">
+            <p class="help-block text-danger"></p>
+        </div>
+    </div>
+    <div class="row control-group">
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label>연락처</label>
+            <input type="tel" class="form-control" placeholder="연락 전화번호(예시: 010-1234-5678)" id="phone" required data-validation-required-message="연락가능한 전화번호를 입력하세요!">
+            <p class="help-block text-danger"></p>
+        </div>
+    </div>
+    <div class="row control-group">
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label>신청내역 (교육 희망 날짜, 신청 인원수, 입금자 성함, 입금 날짜 및 시간, 입금 금액)</label>
+            <textarea rows="5" class="form-control" placeholder="신청내역 (예시: 교육 희망일 : 2020년 10월 14일 , 신청 인원수 : 총 10명 , 입금자 성함 : 국아름 , 입금 날짜 : 2020년 10월 14일 15시 00분, 입금 금액: 100,000원)" id="message" required data-validation-required-message="신청내역을 입력하세요!"></textarea>
+            <p class="help-block text-danger"></p>
+        </div>
+    </div>
+    <br>
+    <div id="success"></div>
+    <div class="row">
+        <div class="form-group col-xs-12 send sendbtn">
+            <button type="submit" class="btn btn-success btn-lg">신청하기</button>
+        </div>
+    </div>
+</form>
+
+ </div>   
+                                            
+  </article>  
+                           
+                           
+<? include "../common/sub_foot.html" ?>
+<script src="bootstrap.min.js"></script>
+<script src="contact_me.js"></script>
+<script src="jqBootstrapValidation.js"></script>
+  	
+</body>
+</html>

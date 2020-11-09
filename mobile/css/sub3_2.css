@@ -1,0 +1,62 @@
+/* font-family: 'Nanum Myeongjo' ; font-family: 'Nanum Gothic'*/
+#content{}
+#content h2{background: url(../images/sub3/sub3ttlx2.jpg) center no-repeat; background-size: cover; text-align: center; margin-top: 50px; padding: 40px 0; color: #333; font-family: 'Nanum Gothic'; font-size: 26px}
+#content h3{font-family: 'Nanum Gothic'; font-size: 20px; margin: 15px 0; font-weight: 700; padding-left: 15px; position: relative}
+#content h3::before{display: block; content: ''; width: 4px; height: 22px; background: #333; left: 0; top: 0; position: absolute}
+#content .intro>h3::before{display: none}
+#content .intro>h3{padding: 0; text-align: center}
+#content section{margin-bottom: 60px; padding: 0 15px; text-align: justify; line-height: 1.7em}
+#content section:nth-of-type(1){background: #f4f2ef; padding: 20px 15px;}
+#content section:nth-of-type(1) img{width: 100%}
+#content section:nth-of-type(2) dl{width: 100%; overflow: hidden}
+#content section:nth-of-type(2) dt{width: 100%; border-top: 1px solid #666; border-bottom: 1px solid #ccc; padding: 7px; margin-top: 10px; font-weight: bold; font-size: 16px}
+#content section:nth-of-type(2) dd{padding: 7px; font-size: 15px; }
+#content section:nth-of-type(2) dd:nth-last-child(1){border-bottom: 1px solid #666}
+#content section:nth-of-type(3) ul li:nth-of-type(1) h4{}
+#content section:nth-of-type(3) ul li:nth-of-type(1) a{display: block; background: #ff9900; padding: 7px 0; text-align: center; font-size: 16px; color: #fff; border-radius: 15px; width: 100%; margin: 30px 0}
+#content section:nth-of-type(3) ul{}
+#content section:nth-of-type(3) ul li{margin: 20px 0 40px 0}
+#content section:nth-of-type(3) h4{font-family: 'Nanum Gothic'; font-size: 18px; padding-left: 20px;  margin-bottom: 10px; position: relative}
+#content section:nth-of-type(3) h4::before{display: block; content: ''; width: 10px; height: 10px; border-radius: 5px; background: #ff9900; left: 0; top: 7px; position: absolute}
+#content section:nth-of-type(3) dl{}
+#content section:nth-of-type(3) dt{border: 1px solid #999; width: 75%; padding: 10px 0; margin: 0 auto; text-align: center; margin-top: 40px; margin-bottom: 20px; border-radius: 15px;}
+#content section:nth-of-type(3) dt span{display: block}
+#content section:nth-of-type(3) dt:nth-of-type(1){margin-top: 20px;}
+#content section:nth-of-type(3) dd{width: 90%; margin: 0 auto; }
+#content section:nth-of-type(3) .pop{color: #669900}
+#content section:nth-of-type(3) a.call{display: inline-block; padding: 5px 70px 5px 0;}
+
+
+/* mob 온라인신청 form */
+.content_area #contactForm {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+.sendbtn{text-align: center; }
+.content_area #contactForm label {
+    display: block;
+    margin: 30px 0 15px;
+    font-weight: 700;
+    font-size: 16px;
+    padding-left: 15px;
+    position: relative;
+}
+.content_area #contactForm label::after{display: block; content: ''; width: 5px; height: 19px; background: #ff9900; position: absolute; left: 0; top: 0}
+.content_area input.form-control {
+    display: block;
+    width: 93%;
+    height: 25px;
+    padding: 3%;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 15px 0 20px 0;
+}
+.form-control:focus{border-color:#ff9900; outline:0;}
+.content_area #contactForm textarea{width: 92%; height: auto; line-height: 1.5em; border: 1px solid #ccc; padding: 17px 14px; font-size: 16px; border-radius: 5px}
+.content_area #contactForm .sendbtn button{padding: 15px 40px; background: #f7aa36; color: #fff; border-radius: 5px; font-size: 16px; cursor: pointer; border: 0; margin-top: 10px}
+.text-danger{color: red; font-weight: 700}
+
+

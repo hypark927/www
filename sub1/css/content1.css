@@ -1,0 +1,27 @@
+/* .text{position: fixed; right:0; top: 0; font-size: 50px; z-index: 100} */
+
+#content .content_area{position: relative; overflow: hidden;}
+#content .content_area::before{content: ""; display: block; background: #333; position: absolute; width: 1px; height:100px; left: 600px; top: 0}
+#content .content_area .intro{margin-top: 205px; text-align: center; font-family: 'Nanum Myeongjo'; position: relative; left: 0; top: -70px; opacity: 0; transition: all 1s}
+#content .intro p:first-of-type{font-size: 40px; color: #ff9900; font-weight: 200; margin-bottom: 76px}
+#content .intro p:last-of-type{font-size: 20px; color: #333; font-weight: 400; line-height: 1.7em; margin-bottom: 143px}
+
+#content .philo ul{position: relative}
+#content .philo li{float: left; margin-right: 50px}
+#content .philo li:after{content: ""; display: block; background: #999; position: absolute; width: 1px; height:30px; left: 263px; top: 411px}
+#content .philo>img:nth-child(1){float: left; margin-bottom: 66px; margin-right: 75px}
+#content .txt{float: left; width:518px; margin-top: 53px}
+#content .txt p:nth-child(1){font-size: 20px; font-family: 'Nanum Gothic'; color: #999; margin-bottom: 22px}
+#content .txt h3{font-size: 40px; font-family: 'Nanum Gothic'; color: #333; margin-bottom: 36px}
+#content .txt p:nth-of-type(2){font-size: 18px; font-family: '돋움'; color: #333; line-height: 1.8em; text-align: justify; margin-bottom: 63px}
+#content .content_area .philo2>img:nth-child(2){float: right; margin-bottom: 66px; margin-left: 75px}
+#content .philo2 ul{position: relative}
+#content .philo2 li{float: left; margin-left: 50px}
+#content .philo2 li:before{content: ""; display: block; background: #999; position: absolute; width: 1px; height:30px; right: 405px; top: 411px}
+#content .philo2 li:after{content: ""; display: block; background: #999; position: absolute; width: 1px; height:30px; right: 207px; top: 411px}
+#content .philo2 li:nth-of-type(1){margin-left: 619px}
+
+#content .content_area .philo1{overflow: hidden; margin-bottom: 170px; position: relative; left: -140px; top: 0; opacity: 0; transition: all 1s}
+#content .content_area .philo2{overflow: hidden; margin-bottom: 170px; position: relative; left: 140px; top: 0; opacity: 0; transition: all 1s}
+#content .content_area .philo3{overflow: hidden; margin-bottom: 170px; position: relative; left: -140px; top: 0; opacity: 0; transition: all 1s}
+#content .content_area div.boxMove{top: 0; left: 0; opacity: 1}

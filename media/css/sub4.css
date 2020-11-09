@@ -1,0 +1,74 @@
+/* 와이드 pc  */
+#wrap{overflow: hidden; width: 100%}
+.videoBox{width:100%; height:100%; overflow:hidden; position:absolute}
+.videoBox span{display: block; color: #fff; text-shadow: 2px 2px 3px rgba(0,0,0,.9); font-size: 9rem; position: absolute; left: 30%; top: 40%; transform: translateX(-50%) translateY(-20%); font-family: 'Merienda'}
+#imgBG,#subBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;   
+}
+
+.down{display: block; font-size: 1.25rem; position: absolute; 
+	 left:50%; margin-left: -64px; bottom: 20%;
+	animation:ani 1s infinite  alternate;}
+@keyframes ani {
+	0% { transform:scale(1); opacity:1; color:#fff;}
+	100% { transform:scale(1.2); opacity:0.8; color:#888;}
+}	
+		
+
+#content{width:100%; margin: 0 auto; overflow: hidden; background: rgba(0,0,0,.8) ; padding: 5% 3%; box-sizing: border-box; color: #fff}
+#content h3{font-size: 3rem; color: #fff; text-align: center; margin-bottom: 2%}
+
+
+/*-------------------------------------------------------------------*/
+.grid-image-item,.grid--images .grid-sizer { width: 20%;}  /* 5단*/
+.grid-image-item {
+  float: left; margin-bottom: 30px
+}
+
+.grid-image-item img{
+    border-radius: 3%;
+  display: block;
+    width: 95%;margin: 10px auto;
+}
+.grid-image-item h4{
+  display: block;
+    width: 95%;text-align: center;margin: 0 auto;
+}
+.grid-image-item p{
+  display: block;
+  width: 95%;text-align: center;margin: 0 auto;
+}
+
+/*-------------------------------------------------------------------*/
+
+
+
+@media screen and (max-width:1024px) {
+    
+  .grid-image-item,.grid--images .grid-sizer { width: 25%;}
+
+}
+
+@media screen and (max-width:768px) {
+     .grid-image-item,.grid--images .grid-sizer {width: 33.33%;}
+    .videoBox span{font-size: 6rem; left: 50%; top: 45%; transform: translateX(-50%) translateY(-50%); opacity: 1; color: greenyellow}
+   
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+	.videoBox>span {font-size: 4rem; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%);}
+}
+
+@media screen and (max-width:480px){
+    .grid-image-item,
+.grid--images .grid-sizer {width: 50%;}
+}

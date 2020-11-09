@@ -1,0 +1,40 @@
+<script>
+window.onload=function(){
+        var num = '<?=$_GET['num']?>';
+        var nav1= document.getElementById('nav1'); 
+        var nav2= document.getElementById('nav2');
+        var nav3= document.getElementById('nav3');
+ 
+          if(num==1){
+              nav1.className='current';
+          }else if(num==2){
+              nav2.className='current';
+          }else if(num==3){
+              nav3.className='current';
+          }
+}
+</script> 
+
+<!-- 메인비주얼영역 --> 
+   <div class="visual">        
+      <div class="company_ttl">
+      <h3>백세주마을</h3> 
+      <p>좋은술이 함께하는 여유로운 곳, 마음과 마음이 따뜻해지는 곳</p>  
+      </div>
+      <img src="common/images/subvisual.jpg" alt=""> 
+   </div>        
+     
+<!-- 서브네비영역 --> 
+    <div class="subNav">
+           <ul>
+               <li>
+                   <a id="nav1" href="sub5_1.html">백세주마을 소개</a>
+               </li>
+               <li>
+                   <a id="nav2" href="sub5_2.html">주류 메뉴</a>
+               </li>
+               <li>
+                   <a id="nav3" href="sub5_3.html">안주 메뉴</a>
+               </li>
+           </ul>
+    </div>

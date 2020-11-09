@@ -1,0 +1,40 @@
+<script>
+window.onload=function(){
+        var num = '<?=$_GET['num']?>';
+        var nav1= document.getElementById('nav1'); 
+        var nav2= document.getElementById('nav2');
+        var nav3= document.getElementById('nav3');
+ 
+          if(num==1){
+              nav1.className='current';
+          }else if(num==2){
+              nav2.className='current';
+          }else if(num==3){
+              nav3.className='current';
+          }
+}
+</script> 
+
+<!-- 메인비주얼영역 --> 
+   <div class="visual">        
+      <div class="company_ttl">
+      <h3>우리술 이야기</h3> 
+      <p>소중한 우리술과 우리문화 국순당이 지켜갑니다</p>  
+      </div>
+      <img src="common/images/subvisual.jpg" alt=""> 
+   </div>       
+     
+<!-- 서브네비영역 --> 
+    <div class="subNav">
+           <ul>
+               <li>
+                   <a id="nav1" href="sub3_1.html">우리술 문화의 특징</a>
+               </li>
+               <li>
+                   <a id="nav2" href="sub3_2.html">국순당 술의 특징</a>
+               </li>                   
+               <li>
+                   <a id="nav3" href="sub3_3.html">우리술 교육</a>
+               </li>              
+           </ul>
+    </div>   

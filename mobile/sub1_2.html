@@ -1,0 +1,202 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content = "telephone=no">
+
+<title>국순당-오시는길</title>
+
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/sub1_2.css">
+
+<script src="js/prefixfree.min.js"></script>
+<script src="https://kit.fontawesome.com/941ac268b7.js" crossorigin="anonymous"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+ <!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body>
+ 
+ 
+ <div id="skipNav">
+     <a href="#content">본문바로가기</a>
+     <a href="#gnb">네비게이션바로가기</a>
+ </div>
+ 
+  <div id="wrap">
+  <div class="box"></div>
+      <header id="headerArea">
+          <h1><a href="index.html"><img src="images/logox2.jpg" alt="국순당로고"><span class="hidden">국순당로고</span></a></h1>    
+          <a class="btn" href="#"><i class="fas fa-bars"><span class="hidden">메뉴</span></i></a>
+                    
+          <nav id="gnb">
+              <h2 class="hidden">글로벌네비게이션영역</h2>   
+             
+              <ul class="top_menu">
+<?
+    if(!$userid)  // 세션변수가 생성되어 있지 않으면  ( 로그인이 안된상태) 
+	{
+?>        
+                 <li>&nbsp;</li>        
+                 <li class="tmlg2"><a href="login/login_form.php"><i class="fas fa-sign-in-alt"></i>로그인</a></li>
+                 <li class="tmlg2"><a href="member/join.html"><i class="fas fa-file-signature"></i>회원가입</a></li>
+ <?
+	}
+	else  // 세션변수가 생성되어 있으면 (로그인이 성공했으면)
+	{
+?>          
+            <li> <?=$usernick?> 님 </li>
+            <li class="tmlg2"><a href="login/logout.php"><i class="fas fa-sign-out-alt"></i>로그아웃</a></li>
+            <li class="tmlg2"><a href="login/member_form_modify.php"><i class="fas fa-user-cog"></i>정보수정</a></li>
+ <?
+	}
+?>              
+               </ul>               
+                                    
+             <ul class="mainMenu">
+                 <li class="depth1 first">
+                     <a href="#">회사소개 <span><i class="fas fa-chevron-down"></i></span></a>
+                     <ul>
+                         <li><a href="sub1_1.html">국순당 개요</a></li>
+                         <li><a href="sub1_2.html">오시는길</a></li>
+                         <li><a href="notice/list.php">공지사항</a></li>
+                     </ul>
+                 </li>
+                 <li class="depth1">
+                     <a href="#">제품소개 <span><i class="fas fa-chevron-down"></i></span></a>
+                     <ul>
+                         <li><a href="sub2_1.html">백세주</a></li>
+                         <li><a href="sub2_2.html">막걸리</a></li>
+                         <li><a href="sub2_3.html">법고창신</a></li>
+                     </ul>
+                 </li>
+                 <li class="depth1">
+                     <a href="#">우리술 이야기 <span><i class="fas fa-chevron-down"></i></span></a>
+                     <ul>
+                         <li><a href="sub3_1.html">국순당 술의 특징</a></li>
+                         <li><a href="sub3_2.html">우리술 교육</a></li>
+                     </ul>
+                 </li>
+                 <li class="depth1 last">
+                     <a href="#">백세주마을 <span><i class="fas fa-chevron-down"></i></span></a>
+                     <ul>
+                         <li><a href="sub4_1.html">백세주마을 소개</a></li>
+                         <li><a href="sub4_2.html">메뉴소개</a></li>
+                     </ul>
+                 </li>                 
+             </ul>
+            <a class="mclose" href="#"><i class="fa fa-times"><span class="hidden">메뉴닫기</span></i></a>
+          </nav>          
+      </header>
+      
+    <article id="content">
+        <h2>오시는길</h2>  
+        
+        <h3><span><i class="fas fa-building"></i></span> 서울사무소</h3> 
+        <div id="mapSeoul"></div>
+                                
+          <dl>
+              <dt><i class="fas fa-map-marker-alt"></i>주소</dt>
+              <dd>서울특별시 강남구 봉은사로 641</dd>
+         
+               <dt><i class="fas fa-phone"></i>전화번호</dt>
+               <dd>02-513-8500</dd>
+          
+               <dt><i class="fas fa-fax"></i>팩스</dt>
+               <dd>02-402-5210</dd>
+          </dl>                
+        
+        
+        
+        <h3><span><i class="fas fa-subway"></i></span> 대중교통 이용시</h3>       
+         <dl class="subway">
+             <dt>· 지하철 <span>9호선 봉은사역</span>에서 하차</dt>
+             <dd><strong>4번출구</strong>에서 450M 직진</dd>
+             <dt>· 지하철 <span>2호선 삼성역</span>에서 하차</dt>
+             <dd><strong>7번출구</strong>에서 마을버스 ( <i class="fas fa-bus"></i>1번 마을버스, 초록색 3417) 승차 &gt; 노블발렌티 웨딩홀 앞 하차</dd>
+         </dl>      
+           
+                     
+         <h3><span><i class="fas fa-car"></i></span> 자가용 이용시</h3>
+        
+         <dl>
+            <dt>· 경부고속도로</dt>
+            <dd>반포 IC 종합운동장 방향으로 직진, 교보생명 &gt; 차병원 &gt; 봉은사 &gt; 아셈타워(직진) &gt; 국순당</dd>
+            <dt>· 서울 서부.강북 지역</dt>
+            <dd>올림픽대로 영동대교 남단 입체교차로에서 무역센터 방향, 홍실아파트 &gt; 아셈타워 앞 봉은사 사거리에서 자회전 &gt; 국순당</dd>
+            <dt>· 서울 동남부 지역</dt>
+            <dd>2호선 삼성역 무역센터 교차로에서 영동대교 방향, 아셈타워 앞 봉은사 사거리에서 우회전 &gt; 국순당</dd>
+         </dl>                                  
+           
+    </article>
+     
+     
+      <footer id="footerArea">
+        <a class="top_move" href="#"><span>▲</span><span class="hidden">top</span></a>
+         <div class="footer_top">
+             <div class="sns">
+               <ul>
+                 <li><a href="https://www.facebook.com/kooksoondang" target="_blank" title="국순당 페이스북 페이지가 새창에 열림"><span class="hidden">페이스북</span><i class="fab fa-facebook-f"></i></a></li>
+                 <li><a href="https://www.instagram.com/kooksoondang/?hl=ko" target="_blank" title="국순당 인스타그램 페이지가 새창에 열림"><span class="hidden">인스타그램</span><i class="fab fa-instagram"></i></a></li>
+                 <li><a href="https://www.youtube.com/channel/UCQLyL4EyQMXv01PdebmA-WA" target="_blank" title="국순당 유튜브 채널이 새창에 열림"><span class="hidden">유튜브</span><i class="fab fa-youtube"></i></a></li>
+               </ul> 
+             </div>
+             <div class="family_site">
+                  <a class="arrow" href="#fam">패밀리 사이트</a>
+                  <ul class="aList">
+                       <li><a href="http://bekseju.com" target="_blank" title="백세주 브랜드사이트가 새창에 열림">국순당 백세주</a></li>                       
+                       <li><a href="http://sool.ksdb.co.kr" target="_blank" title="법고창신 브랜드사이트가 새창에 열림">국순당 법고창신</a></li>
+                       <li><a href="http://www.woorisooledu.com" target="_blank" title="우리술아름터 사이트가 새창에 열림">우리술아름터</a></li>
+                       <li><a href="http://drink.ksdb.co.kr" target="_blank" title="주향로 사이트가 새창에 열림">주향로</a></li>                       
+                   </ul>                                     
+                </div>
+         </div>
+         <ul class="utill">
+             <li><a href="#">이용약관</a></li>
+             <li><a href="#">개인정보방침</a></li>
+             <li><a href="http://hypark927.cafe24.com">PC버전</a></li>
+         </ul>
+         <address>
+               (주)국순당  <span>대표 : 배상민</span><br>
+               사업자등록번호 : 124-81-14925 <br>
+               주소 : 강원도 횡성군 둔내면 강변로 975<br>
+               고객센터 : 080-0035-100               
+          </address>
+          <p>COPYRIGHT &copy; KOOKSOONDANG CO.LTD</p>
+      </footer>  
+
+  </div>
+ 
+ <script src="js/jquery-1.12.4.min.js"></script>
+ <script src="js/jquery-migrate-1.4.1.min.js"></script>
+ <script src="js/script_common.js"></script>
+ <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f162006fa5fd6fe4369ea2e88b5b3d42"></script>
+ <script src="js/map.js"></script>
+</body>
+</html>

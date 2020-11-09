@@ -1,0 +1,101 @@
+.text{position: fixed; right:0; top: 0; font-size: 50px; z-index: 100}
+
+/* 비쥬얼 */
+.visual{margin-bottom: 170px; position: relative; overflow: hidden ; width: 2000px; top: -100px; left: 50%; margin-left: -1000px; overflow: hidden}
+.visual .gallery{position: relative; overflow: hidden; width: 8000px; height: 1000px; left: 0; top: 0}
+.visual .gallery ul li{float:left}
+.visual .gallery_text{width: 100%; position: absolute; left: 0; top: 610px; z-index: 1; font-family: 'Nanum Myeongjo'; color: #fff; font-size: 50px; line-height: 1.5em; overflow: hidden}
+.visual .gallery_text li{display: none; text-align: center; font-size: 50px; color: #fff; background: rgba(0,0,0,.4); padding: 40px 40px}
+.visual .dock{width:500px; position:absolute; left:50%; top:900px; margin-left: -80px}
+.visual .dock span.mbutton{margin-right:15px; cursor:pointer; display:block; float:left; width:16px; height:16px; background: #fff; border-radius:8px; transition: all .5s}
+.visual .dock .ps{ margin-right:15px; cursor:pointer; display:block; float:left; width:16px; height:16px; background:url(../images/stop.png)}
+
+
+
+/* 콘텐츠 */
+#content{overflow: hidden; width: 100%; position: relative}
+#content .content_inner{width: 1200px; margin: 0 auto}
+#content .content_inner:after{content:''; display: block; width: 100%; height: 1px; background: #ccc; position: absolute; left: 0; top: 830px}
+
+#content .company{overflow: hidden}
+#content .company .company_left{float: left; width: 400px; margin: 90px 0 0 50px; position: relative; left: 0; top: -70px; opacity: 0; transition: all 1.2s}
+#content .company_left h3{font-size: 50px; font-family: 'Nanum Gothic'; margin-bottom: 40px}
+#content .company_left p{font-size: 25px; color: #666; font-family: 'Nanum Myeongjo'; line-height: 1.5em}
+#content .company .company_right{float: right; overflow: hidden}
+#content .company_right ul{width: 650px; margin-bottom: 170px; position: relative}
+#content .company_right li{position: relative; margin-bottom: 30px; overflow: hidden}
+#content .company_right .cpn1{left: 100px; opacity: 0; transition: all 1s}
+#content .company_right .cpn2{left: 100px; opacity: 0; transition: all 1s}
+#content .company_right .cpn3{left: 100px; opacity: 0; transition: all 1s}
+#content .company_right dl{position: absolute; left: 0; top: 0; width: 710px; height: 200px; background: rgba(0,0,0,.4); color: #fff; z-index: 2; transition: all .3s}
+#content .company_right dl dt{font-size:33px; font-family: 'Nanum Gothic'; margin: 45px 0 20px 80px; transition: all .4s; }
+#content .company_right dl dd{font-size:18px; font-family: 'Nanum Myeongjo'; line-height: 1.5em; margin-left: 120px; transform: translate(0,25px); transition: all .4s ; opacity: 0}
+#content .company_right dl dt span{font-size: 16px}
+#content .company_right a{display: block; position: absolute; left: 0; top: 0; width: 100%; height: 200px; text-indent: -999px; overflow: hidden; z-index: 3}
+#content .company_right img{transition: all .3s ease-out}
+#content .company_right li:before{content: ""; position: absolute; z-index: 4; left: 0; top: 0; bottom: 0; background: #ff9900; width: 15px; transform: translateX(-15px); transition: all .3s ease-out}
+#content .company_right li:hover:before{transform: translateY(0)}
+#content .company_right li:hover img{transform: scale(1.2);}
+#content .company_right li:hover dl{background: rgba(0,0,0,.6); transition-delay: .2s}
+#content .company_right li:hover dd{transform: translate( 0, 0); transition-delay: .2s; opacity: 1}
+#content .company div.boxMove{top: 0; left: 0; opacity: 1}
+#content .company_right li.boxMove{top: 0; left: 0; opacity: 1}
+
+#content .product{}
+#content .product .product_main{display: block; height: 540px; overflow: hidden; background: url(../images/circle.jpg) 140px 40px no-repeat; }
+#content .product_main .txt{width: 511px; float: left; margin: 125px 0 60px 220px; }
+#content .product_main img{display: block; float: right; margin: 58px 221px 53px 0}
+#content .product_main h3{font-size: 70px; font-family: 'Nanum Gothic'; margin-bottom: 35px}
+#content .product_main h3 span{font-size: 50px; font-weight: 400}
+#content .product_main p{font-family: 'Nanum Myeongjo';}
+#content .product_main p:nth-of-type(1){font-size: 30px; line-height: 1.5em; margin-bottom: 27px; color: #666}
+#content .product_main p:nth-of-type(2){font-size: 18px; color: #ff9900; margin-bottom: 30px}
+#content .product_main .txt a{display: block; width: 170px ; border: 2px solid #666; border-radius: 5px ;font-size: 18px; text-align: center; padding: 7px 0; transition: all .2s ease-out}
+#content .product_main .txt a:hover{color: #fff; background-color:#ff9900; }
+
+#content .product .product_tab{width: 1200px; margin: 0 auto}
+#content .product_tab ul{overflow: hidden; width: 732px; margin: 0 auto}
+#content .product_tab li{float: left; width:33.3%; margin: 0 auto; font-family: '돋움'; font-size: 18px; font-weight: bold;}
+#content .product_tab li a{display: block; color: #999; text-align: center; padding: 15px 0; border: 1px solid #ccc}
+#content .product_tab a:hover{color: #ff9900; background: #f4f1f1}
+#content .product_tab .current{background: #f4f1f1; color: #ff9900; letter-spacing: -1px }
+
+#content .product .product_sub{background: #f4f1f1; position: relative; margin-bottom: 170px; padding-bottom: 20px; overflow: hidden}
+#content .product_sub ul{overflow: hidden; padding: 50px 25px 20px 50px; display: none}
+#content .product_sub ul li{float: left; width: 350px; height: 300px; border: 1px solid #ccc; margin: 0 8px; background: #fff; position: relative}
+#content .product_sub ul li img{}
+#content .product_sub ul li a{display: block; width: 350px; height:300px; position: absolute }
+#content .product_sub ul li a:hover{box-shadow: 2px 3px 3px rgba(0,0,0,.4);}
+#content .product_sub dl{padding: 20px 0 0 20px}
+#content .product_sub dt{font-size: 30px; font-family: 'Nanum Gothic'; color: #666; margin-bottom: 10px}
+#content .product_sub dd{font-size: 16px; font-family: '돋움'; color: #ff9900; font-weight:bold; margin-bottom: 15px}
+
+#content .kor_alcohol{margin-bottom: 170px; overflow: hidden}
+#content .kor_alcohol figure{float: left; overflow: hidden; width: 600px; height: 500px; transition: all .5s; position: relative; }
+#content .kor_alcohol figure img{transition: all .5s; width: 600px; height: 500px}
+#content .kor_alcohol figure:hover img{transform: scale(1.1)}
+#content .kor_alcohol figure:hover figcaption{background: rgba(0,0,0,.5)}
+#content .kor_alcohol figcaption{outline-offset: -20px; outline: rgba(255,255,255,.6) double 4px; position: absolute; width: 100%; left: 0; top: 0; background: rgba(0,0,0,.3); text-align: center; padding: 153px 0; color: #fff; font-size: 22px; font-family:'Nanum Gothic'; transition: all .7s; }
+#content .kor_alcohol figcaption p{position: relative}
+#content .kor_alcohol figcaption p::before{content:""; width: 200px; height: 1px; background: #fff; display: block; position: absolute; left: 200px; top: 40px; z-index: 2}
+
+#content .kor_alcohol figcaption h4{font-size: 37px; margin: 40px 60px}
+#content .kor_alcohol a{color: #fff; display: block; width: 180px; border: 1px solid #fff; padding: 12px 22px; font-size: 18px; transition: all .3s; text-align: center; margin-left: 187px;}
+#content .kor_alcohol a:hover{background: #ff9900}
+
+#content .promote{overflow: hidden; margin-bottom: 170px}
+#content .promote_left{float: left; width: 350px; margin: 30px 0 0 50px; position: relative; left: 0; top: -60px; opacity: 0; transition: all 1.2s}
+#content .promote_left h3{font-size: 50px; font-family: 'Nanum Gothic'; margin-bottom: 40px}
+#content .promote_left p{font-size: 27px; color: #666; font-family: 'Nanum Myeongjo'; line-height: 1.5em}
+#content .promote_right{overflow: hidden; position: relative; left: 40px; opacity: 0; transition: all 1s}
+#content .promote_right h4{font-size: 30px; font-family:'Nanum Gothic'; margin-bottom: 27px}
+#content .promote_right img{border: 1px solid #ccc; margin-bottom: 25px}
+#content .promote_right li{margin-bottom: 15px}
+#content .promote_right li span{float: right; color: #666}
+#content .promote_right li a:hover{color: #ff9900}
+#content .promote_right i{font-size: 18px; color: #333}
+#content .promote_right i:hover{color: #ff9900}
+#content .promote_right .news_com{float: left; width: 350px; margin-right: 50px; position: relative; }
+#content .promote_right .news_shop{float: right; width: 350px; margin-right: 50px; position: relative}
+#content .promote_right .more{position: absolute; right: 0; top: 365px}
+#content .promote div.boxMove{top: 0; left: 0; opacity: 1}

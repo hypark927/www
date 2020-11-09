@@ -1,0 +1,84 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>국순당-백세주마을</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="common/css/sub5common.css">
+    <link rel="stylesheet" href="css/content3.css">
+    
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/941ac268b7.js" crossorigin="anonymous"></script>
+    <!--[if IE9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+</head>
+
+<body>
+ 
+ <? include "../common/sub_head.html" ?>   
+ <? $_GET['num']=3;
+      include "common/sub_nav.html"; 
+ ?>
+        
+   
+<!-- 본문콘텐츠영역 -->
+    
+    <article id="content">
+        
+        <div class="title_area">
+            <div class="lineMap">
+                <span>home </span>&gt;<span> 백세주마을 </span>&gt;<strong> 안주 메뉴</strong>
+            </div>
+            <div class="title_con">        
+                <h2>안주 메뉴</h2>
+                <p>좋은술이 함께하는 여유로운 곳, 마음과 마음이 따뜻해지는 곳 백세주마을의 안주메뉴를 소개합니다.</p>
+            </div>   
+        </div>
+                                                             
+    <div class="content_area">
+           
+                             
+     <div class="intro">            
+        <dl>  
+            <dt>백세문어초회</dt>
+            <dd>25,000원</dd>
+            <dd>탱글한 문어와 신선한 채소에 특제 백세주 소스가 어우러진 일품메뉴</dd>
+            <dd>* 어울림주 : 생백세주</dd>
+        </dl> 
+        <dl>
+            <dt>흑돼지맥적구이</dt>
+            <dd>24,000원</dd>
+            <dd>된장으로 양념한 국내산 흑돼지와 담백하고 깊은 맛이 일품인 구이 메뉴</dd>
+            <dd>* 어울림주 : 생백세주</dd>
+        </dl>
+         <img src="images/content3/intro.jpg" alt="">
+     </div>
+       
+       
+        <div id="bvMenu">
+        
+        
+        
+         <!-- 백세주마을 안주메뉴 -->          
+        </div>               
+                                                                                                                                                                                                                                                                                                                   
+      </div>        
+    </article>
+    
+    
+ <? include "../common/sub_foot.html" ?>
+ <script src="js/menu_json.js"></script>
+    
+</body>
+</html>

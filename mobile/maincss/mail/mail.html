@@ -1,0 +1,263 @@
+<? 
+	session_start(); 
+    @extract($_POST);
+    @extract($_GET);
+    @extract($_SESSION);
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>국순당-우리술 아름터 온라인신청</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet"> 
+	<link rel="stylesheet" href="../common/css/common.css">
+	<link rel="stylesheet" href="../sub3/common/css/sub3common.css">
+	<link rel="stylesheet" href="../sub3/css/content3.css">
+	
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/941ac268b7.js" crossorigin="anonymous"></script>
+   
+    <!--[if IE9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+   
+<div id="skipNav">
+ <a href="#content">본문 바로가기</a>
+ <a href="#gnb">글로벌 네비게이션 바로가기</a>
+</div>
+
+ <div id="wrap">    
+<!-- 헤더 공통영역 -->
+     <header id="headerArea">
+        <div class="header_inner">
+         <h1 class="logo">
+             <a href="../index.html">국순당</a> 
+         </h1>
+       
+         <div class="top_menu">
+             <ul>
+<?
+    if(!$userid)  // 세션변수가 생성되어 있지 않으면  ( 로그인이 안된상태) 
+	{
+?>        
+                 <li><a href="../login/login_form.php">로그인</a></li>
+                 <li><a href="../member/join.html">회원가입</a></li>
+<?
+	}
+	else  // 세션변수가 생성되어 있으면 (로그인이 성공했으면)
+	{
+?>          
+            <li> <?=$usernick?> </li>
+            <li><a href="../login/logout.php">로그아웃</a></li>
+            <li><a href="../login/member_form_modify.php">정보수정</a></li>
+<?
+	}
+?>               
+             </ul>
+         </div>
+         <nav id="gnb">
+              <h2 class="hidden">글로벌네비게이션영역</h2>
+             <ul class="dropdownmenu">
+                    <li class="m1 menu">
+                        <h3><a class="depth1" href="../sub1/sub1_1.html">회사소개</a></h3>
+                        <ul>
+                            <li><a href="../sub1/sub1_1.html">국순당개요</a></li>
+                            <li><a href="../sub1/sub1_2.html">연혁</a></li>
+                            <li><a href="../sub1/sub1_3.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li class="m2 menu">
+                        <h3><a class="depth1" href="../sub2/sub2_1.html">제품소개</a></h3>
+                        <ul>
+                            <li><a href="../sub2/sub2_1.html">백세주</a></li>
+                            <li><a href="../sub2/sub2_2.html">막걸리</a></li>
+                            <li><a href="../sub2/sub2_3.html">법고창신</a></li>
+                        </ul>
+                    </li>
+                    <li class="m3 menu">
+                        <h3><a class="depth1" href="../sub3/sub3_1.html">우리술 이야기</a></h3>
+                        <ul>
+                            <li><a href="../sub3/sub3_1.html">우리술 문화의 특징</a></li>
+                            <li><a href="../sub3/sub3_2.html">국순당 술의 특징</a></li>
+                            <li><a href="../sub3/sub3_3.html">우리술 교육</a></li>
+                        </ul>
+                    </li>
+                    <li class="m4 menu">
+                        <h3><a class="depth1" href="../sub4/sub4_1.html">인재채용</a></h3>
+                        <ul>
+                            <li><a href="../sub4/sub4_1.html">인재상</a></li>
+                            <li><a href="../sub4/sub4_2.html">복리후생</a></li>
+                            <li><a href="../sub4/sub4_3.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="m5 menu">
+                        <h3><a class="depth1" href="../sub5/sub5_1.html">백세주마을</a></h3>
+                        <ul>
+                            <li><a href="../sub5/sub5_1.html">백세주마을 소개</a></li>
+                            <li><a href="../sub5/sub5_2.html">주류 메뉴</a></li>
+                            <li><a href="../sub5/sub5_3.html">안주 메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li class="m6 menu">
+                        <h3><a class="depth1" href="../greet/list.php">홍보마당</a></h3>
+                        <ul>
+                            <li><a href="../greet/list.php">공지사항</a></li>
+                            <li><a href="../customer/list.php">고객의 소리</a></li>
+                            <li><a href="../sub6/sub6_3.html">광고 자료</a></li>
+                        </ul>
+                    </li>
+              </ul>
+          </nav>
+         </div>
+    </header>
+
+
+  
+<!-- 메인비주얼영역 --> 
+   <div class="visual">        
+      <div class="company_ttl">
+      <h3>우리술 이야기</h3> 
+      <p>소중한 우리술과 우리문화 국순당이 지켜갑니다</p>  
+      </div>
+      <img src="../sub3/common/images/subvisual.jpg" alt=""> 
+   </div>    
+  
+  
+<!-- 서브네비영역 --> 
+    <div class="subNav">
+           <ul>
+               <li>
+                   <a id="nav1" href="../sub3/sub3_1.html">우리술 문화의 특징</a>
+               </li>
+               <li>
+                   <a id="nav2" href="../sub3/sub3_2.html">국순당 술의 특징</a>
+               </li> 
+               <li>
+                   <a id="nav3" href="../sub3/sub3_3.html" class="current">우리술교육</a>
+               </li>
+           </ul>           
+    </div>
+        
+<!-- 본문콘텐츠 영역 -->
+       
+               
+                               
+ <article id="content">
+		<div class="title_area">
+            <div class="lineMap">
+                <span>home </span>&gt;<span> 우리술 이야기 </span>&gt;<span> 우리술 교육 </span>&gt;<strong> 온라인 신청</strong> 
+            </div>           
+            <div class="title_con">        
+                 <h2><span>우리술 아름터</span> 온라인 신청</h2>   
+            </div>  
+        </div>   
+   
+   <div class="content_area">
+      
+    <form name="sentMessage" id="contactForm" novalidate>
+    <div class="row control-group">
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label>신청자(단체) 이름</label>
+            <input type="text" class="form-control" placeholder="이름(단체명)" id="name" required data-validation-required-message="이름을 입력하세요.">
+            <p class="help-block text-danger"></p>
+        </div>
+    </div>
+    <div class="row control-group">
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label>신청자(단체) 메일주소</label>
+            <input type="email" class="form-control" placeholder="Email 주소 (예시: abc@domail.com)" id="email" required data-validation-required-message="이메일 주소를 입력하세요.">
+            <p class="help-block text-danger"></p>
+        </div>
+    </div>
+    <div class="row control-group">
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label>연락처</label>
+            <input type="tel" class="form-control" placeholder="연락 전화번호(예시: 010-1234-5678)" id="phone" required data-validation-required-message="연락가능한 전화번호를 입력하세요.">
+            <p class="help-block text-danger"></p>
+        </div>
+    </div>
+    <div class="row control-group">
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label>신청내역 (교육 희망 날짜, 신청 인원수, 입금자 성함, 입금 날짜 및 시간, 입금 금액)</label>
+            <textarea rows="5" class="form-control" placeholder="신청내역 (예시: 교육 희망일 : 2020년 10월 14일 , 신청 인원수 : 총 10명 , 입금자 성함 : 국아름 , 입금 날짜 : 2020년 10월 14일 15시 00분, 입금 금액: 100,000원)" id="message" required data-validation-required-message="신청내역을 입력하세요."></textarea>
+            <p class="help-block text-danger"></p>
+        </div>
+    </div>
+    <br>
+    <div id="success"></div>
+    <div class="row">
+        <div class="form-group col-xs-12 send sendbtn">
+            <button type="submit" class="btn btn-success btn-lg">신청하기</button>
+        </div>
+    </div>
+</form>
+
+ </div>   
+                                            
+  </article>  
+                           
+    
+   
+<!-- 푸터공통영역 -->
+    <a class="topMove" href="javascript:void(0);"><span>▲</span><span>top</span></a>  
+      
+       <footer id="footerArea">
+       <div class="footer_inner">
+            <div class="footer_top">
+                <div class="utill">
+                    <ul>
+                        <li><a href="#">개인정보 취급방침</a></li>
+                        <li><a href="#">회원약관</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                </div>
+               <div class="family_site">
+                   <a class="arrow" href="#fam">패밀리 사이트</a>
+                   <ul class="aList">
+                       <li><a href="http://bekseju.com" target="_blank" title="백세주 브랜드사이트가 새창에 열림">국순당 백세주</a></li>                       
+                       <li><a href="http://sool.ksdb.co.kr" target="_blank" title="법고창신 브랜드사이트가 새창에 열림">국순당 법고창신</a></li>
+                       <li><a href="http://www.woorisooledu.com" target="_blank" title="우리술아름터 사이트가 새창에 열림">우리술아름터</a></li>
+                       <li><a href="http://drink.ksdb.co.kr" target="_blank" title="주향로 사이트가 새창에 열림">주향로(찾아가는 양조장)</a></li>                       
+                   </ul>
+                                     
+                </div>
+                <div class="sns">
+                    <ul>
+                        <li><a href="https://www.facebook.com/kooksoondang" target="_blank" title="국순당 페이스북 페이지가 새창에 열림"><span class="hidden">페이스북</span><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/kooksoondang/?hl=ko" target="_blank" title="국순당 인스타그램 페이지가 새창에 열림"><span class="hidden">인스타그램</span><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCQLyL4EyQMXv01PdebmA-WA" target="_blank" title="국순당 유튜브 채널이 새창에 열림"><span class="hidden">유튜브</span><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_bottom">
+               <img src="../common/images/footer_logo.png" alt="" class="footer_logo">
+               <div class="footer_info">
+                   <address>
+                   (주)국순당  <span>대표 : 배상민</span><br>
+                   사업자등록번호 : 124-81-14925 <br>
+                   주소 : 강원도 횡성군 둔내면 강변로 975<br>
+                   고객센터 : 080-0035-100               
+                   </address>
+                   <p>COPYRIGHT &copy; 2020 by KOOKSOONDANG CO.LTD</p>
+               </div>
+           </div>
+        </div>
+    </footer>
+</div>
+    
+<script src="../common/js/jquery-1.12.4.min.js"></script>
+<script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+<script src="../common/js/gnb.js"></script>
+<script src="../common/js/slide_move.js"></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="contact_me.js"></script>
+<script src="jqBootstrapValidation.js"></script>
+  	
+</body>
+</html>

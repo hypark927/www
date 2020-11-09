@@ -1,0 +1,36 @@
+/* font-family: 'Nanum Myeongjo' ; font-family: 'Nanum Gothic'*/
+#content{}
+#content h2{background: url(../images/sub3/sub3ttlx2.jpg) center no-repeat; background-size: cover; text-align: center; margin-top: 50px; padding: 40px 0; color: #333; font-family: 'Nanum Gothic'; font-size: 26px}
+#content h3{font-family: 'Nanum Gothic'; font-size: 20px; margin: 15px 0; font-weight: 700; padding-left: 15px; position: relative}
+#content h3::before{display: block; content: ''; width: 4px; height: 22px; background: #333; left: 0; top: 0; position: absolute}
+#content .intro>h3::before{display: none}
+#content .intro>h3{padding: 0; text-align: center}
+#content>p:nth-of-type(1){text-align: center; margin: 30px 15px 5px 15px; line-height: 1.7em; font-family: 'Nanum Myeongjo'; font-size: 16px; color: #666}
+
+#content .tabs{margin: 0 auto; width: 80%; margin-top: 30px; margin-bottom: 30px ;overflow: hidden}
+#content .tabs a{font-family: 'Nanum Gothic'; font-size: 18px; float: left; display: block; width: 48%; text-align: center; background: #fff; padding: 10px 0; border: 1px solid #ff9900; border-radius: 10px}
+#content .tabs a:nth-of-type(1){margin-right: 2%}
+#content .tabs a.active{background: #ff9900; color: #fff}
+#content .content-slide{line-height: 1.7em}
+#content .content-slide .intro{font-size: 15px; background: #f4f2ef; padding: 20px 15px; text-align: justify; margin-bottom: 10px}
+
+#content section p{margin-bottom: 7px}
+#content .intro p{margin-bottom: 7px}
+#content .intro h3{font-family: 'Nanum Myeongjo'; font-size: 17px; }
+#content .intro h3>span{font-size: 23px; font-weight: 700}
+#content .page_inner{margin: 20px 0; padding: 10px 15px}
+#content .page_inner section:nth-of-type(1) img{width: 100%}
+#content .content-slide section{margin-bottom: 50px}
+#content .merit dl{margin: 0 auto; margin-bottom: 15px; padding: 20px; width: 75%; background: #fff; border: 1px solid #ccc; border-radius: 25px; text-align: center}
+#content .merit dt{font-size: 17px; font-weight: bold; margin-bottom: 7px}
+#content .page2 .merit span{font-size: 16px; color: #666}
+
+#content .page1 section:nth-of-type(1) ul li{margin-bottom: 5px;}
+#content .page1 section:nth-of-type(1) ul li span{font-weight: bold;}
+#content .page1 section:nth-of-type(2) p{margin-bottom: 15px}
+#content .page2 section:nth-of-type(1) span{font-size: 16px}
+#content .patent{overflow: hidden;}
+#content .patent img{width: 60px; padding: 10px 0; float: left}
+#content .patent ul{width: 90%; margin: 0 auto}
+#content .patent ul li{float: left; width: 100%; background: #fff; border: 1px solid #ccc; border-radius: 25px; box-sizing: border-box; padding: 15px; font-size: 13px; margin-bottom: 10px}
+#content .patent ul li p{margin-left: 70px}

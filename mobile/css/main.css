@@ -1,0 +1,67 @@
+/* CSS Document */
+
+/* 비주얼영역 */
+.main{margin-top: 50px}
+
+#content .company{padding: 40px 15px 40px 15px; }
+#content .company p{font-size: 21px; font-family: 'Nanum Myeongjo'; font-weight: 700; line-height: 1.7em; text-align: center; margin-bottom: 74px; position: relative}
+#content .company p::after{display: block; content: ""; width: 1px; height: 30px; background: #333; position: absolute; left: 50%; top: 85px}
+#content .company .com_inner{overflow: hidden; position: relative; width: 100%}
+#content .com_inner a{display: block; width: 60%; position: absolute; left: 50%; top: 50%; margin-left: -30%; margin-top: -18%; background: #fff; box-shadow: 1px 2px 6px rgba(0,0,0,.4);}
+#content .com_inner a img{width: 100%}
+#content .com_inner img{width: 60%}
+#content .com_inner img:nth-of-type(1){float: right}
+#content .com_inner img:nth-of-type(2){float: left; margin-top: 22%}
+
+
+#content .product{}
+#content .product .swiper-container{overflow: hidden; width: 100%; height: 100%;}
+#content .product .swiper-wrapper{width: 100%; position: relative;}
+#content .product .swiper-slide img{width: 100%}
+#content .product .info{position: absolute; width: 90%; left: 50%; top: 0; text-align: center; font-family: 'Nanum Gothic'; margin-left: -45%; padding-top: 35px;}
+#content .product .info h3{font-size: 21px; margin-bottom: 14px; font-weight: 700}
+#content .product .info h3 span{font-size: 32px}
+#content .product .info p{font-size: 13px; font-family: 'Nanum Myeongjo'; line-height: 1.7em; margin-bottom: 18px; font-weight: 700}
+#content .product .info a{display: inline-block; width: 50%; font-size: 14px; background: #ff9900; color: #fff; padding: 11px; border-radius: 10px;}
+
+#content .alcohol{padding: 50px 0; width: 100%}
+#content .alcohol ul{width: 100%}
+#content .alcohol ul li{width: 100%; height: 185px; background-size: cover; outline-offset: -15px; outline: 1px solid #fff; text-align: center; font-family: 'Nanum Gothic'}
+#content .alcohol ul li:nth-of-type(1){background: url(../images/al01x2.jpg) left top no-repeat; background-size: cover}
+#content .alcohol ul li:nth-of-type(2){background: url(../images/al02x2.jpg) left top no-repeat; background-size: cover}
+#content .alcohol ul li p{color: #fff; font-size: 24px; padding-top: 63px}
+#content .alcohol ul li a{display: block; color: #fff; font-size: 15px; font-weight: 700; padding: 16px}
+
+#content .bv{width: 100%; height: 480px; padding-top: 105px; background: url(../images/bm_01x2.jpg) left top no-repeat; background-size: cover}
+#content .bv>div{overflow: hidden; width: 100%; background: rgba(0,0,0,.5); padding: 15px 0 40px 0; text-align: center}
+#content .bv h3 a{display: block; color: #fff; font-size: 24px; font-family: 'Nanum Gothic'; font-weight: 700; padding: 25px}
+#content .bv p{color: #fff; font-size: 14px; font-family: 'Nanum Gothic'; line-height: 1.7em}
+
+
+/*공지사항*/
+.news{height:50px; background:#f4f2ef;}
+.news .notice_con{height:30px; margin:0 10px;line-height:1em; border-radius:7px; position:relative; top:10px; background:#fff;}
+.news .notice_con h3{font-size:13px; font-weight:bold; color:#333; padding:8px 6%;}
+.news .notice_con .slide_box{width:67%; height:13px; overflow:hidden; position:absolute; left:30%; top:7px;}
+.news .notice_con .slide_box .slide{position:absolute;}
+.news .notice_con .slide ul{font-size:12px;}
+.news .notice_con .slide ul li{height:13px; overflow:hidden; text-overflow:clip; -o-text-overflow:clip; margin-bottom:5px;}
+
+
+      /* Center slide text vertically */
+        .swiper-slide {
+      text-align: center;      
+      background: #fff;
+  display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }

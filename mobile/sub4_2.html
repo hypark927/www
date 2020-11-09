@@ -1,0 +1,62 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content = "telephone=no">
+
+<title>국순당-메뉴 소개</title>
+
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/sub4_2.css">
+
+<script src="js/prefixfree.min.js"></script>
+<script src="https://kit.fontawesome.com/941ac268b7.js" crossorigin="anonymous"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+ <!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  
+  <? include "common_head.html" ?>
+   
+    <article id="content">
+        <h2>메뉴 소개</h2>          
+       
+        
+        <div id="bvMenu">
+         <!-- 백세주마을 안주메뉴 -->          
+        </div>               
+        
+        
+    </article>
+     
+      <? include "common_foot.html" ?>
+ <script src="js/menu.js"></script>
+</body>
+</html>

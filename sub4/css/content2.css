@@ -1,0 +1,13 @@
+#content .content_area{}
+#content .welfare{margin-bottom: 150px}
+#content .welfare img{width: 70px; margin-right: 30px}
+#content .welfare ul{overflow: hidden}
+#content .welfare ul li{float: left; width: 335px; font-family: 'Nanum Gothic'; color: #333; font-size: 18px ;font-weight: 700; margin: 5px 5px; padding: 40px 20px 50px 30px; border: 1px solid #ccc; position: relative; transition: all .5s ease-out}
+#content .welfare ul li::after{display: block; width:230px; line-height: 1.5em; text-align: justify; font-size: 16px; color: #999; position: absolute; left: 130px; top: 75px}
+#content .welfare ul li:nth-of-type(2):hover::after{content: "일정 임직원의 주택임차 및 구입에 필요한 자금을 융자 지원함"}
+#content .welfare ul li:nth-of-type(3):hover::after{content: "일정 국내외에 재학중인 임직원의 자녀에 대해서 학자금을 지원함"}
+#content .welfare ul li:nth-of-type(4):hover::after{content: "일정 임직원 개인의 연령에 따라 주기적인 종합건강검진을 지원함"}
+#content .welfare ul li:nth-of-type(5):hover::after{content: "회사가 생산하는 일정제품을 저가에 구입하거나 업소 음용 시 일정금액을 지원하는 제도"}
+#content .welfare ul li:hover{border: 1px solid #ff9900; background: #fcf4e8}
+#content .welfare ul li:hover::before{content:url(../images/content2/label_o.png); right: -5px; top: -5px; position: absolute}
+

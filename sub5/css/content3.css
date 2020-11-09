@@ -1,0 +1,33 @@
+#content .content_area{}
+
+#content .intro{position: relative}
+#content .intro::before{content: ''; display: block; position: absolute; right: 430px; top: 300px; background: #fff; width: 1px; height: 100px;}
+#content .intro::after{content: ''; display: block; position: absolute; left: 280px; top: 410px; background: #fff; width: 1px; height: 90px;}
+#content .intro>dl{position: absolute; background: rgba(255,255,255,.7); padding: 30px 30px; text-align: justify; font-family: 'Nanum Gothic';}
+#content .intro>dl:hover{background: rgba(255,153,0,.9) ;transition: all .5s;}
+#content .intro>dl:nth-of-type(1){width: 400px; right: 50px; top: 90px}
+#content .intro>dl:nth-of-type(2){width: 330px; left: 50px; top: 200px}
+#content .intro dt{font-size: 25px; font-weight: 700;}
+#content .intro dd{font-size: 16px; line-height: 2em;}
+#content .intro dd:nth-of-type(1){text-align: right}
+#content .intro dd:nth-of-type(3){color: #ff9900; background: #fff; padding-left: 5px; box-shadow: 1px 1px 4px rgba(0,0,0,.4)}
+.intro a{display: block}
+
+#content .content_area #bvMenu{width: 1196px; margin: 0 auto; overflow: hidden; margin-bottom: 100px; border: 1px solid #666}
+#content #bvMenu{}
+#content #bvMenu dl{width: 237px; height: 540px; border: 1px solid #666; float: left; padding: 15px 30px 30px 30px; line-height: 2em; text-align: justify; font-family: 'Nanum Gothic'; transition: all .5s; position: relative; background: #f4f1f1; overflow: hidden}
+#content #bvMenu dl:hover, #content #bvMenu dl:focus{background: rgba(255,153,0,.9); transition: all .5s;}
+#content #bvMenu dt{font-size: 25px; font-weight: 700; padding: 10px 0}
+#content #bvMenu dt>span{display: block; font-size: 14px; color: #666; font-weight: 100}
+#content #bvMenu dd{font-size: 16px; margin-bottom: 10px;}
+#content #bvMenu dd:nth-of-type(1){text-align: right; font-weight: 700; margin-bottom: 10px}
+#content #bvMenu .match{position: absolute; bottom: -130px; left: 30px; width: 223px; height: 150px; color: #ff9900; font-weight: 700; background: #fff; padding: 3px 7px; border-top-left-radius: 5px; border-top-right-radius: 5px; transition: all .4s; box-shadow: 1px 1px 4px rgba(0,0,0,.4)}
+#content #bvMenu dl:hover .match{bottom: -20px}
+#content #bvMenu dl:nth-of-type(1) .match{background: #fff url(../images/content3/bg1.png) 75px 30px no-repeat}
+#content #bvMenu dl:nth-of-type(2) .match{background: #fff url(../images/content3/bg2.png) 50px 30px no-repeat}
+#content #bvMenu dl:nth-of-type(3) .match{background: #fff url(../images/content3/bg3.png) 90px 50px no-repeat}
+#content #bvMenu dl:nth-of-type(4) .match{background: #fff url(../images/content3/bg4.png) 90px 30px no-repeat}
+#content #bvMenu dl:nth-of-type(5) .match{background: #fff url(../images/content3/bg5.png) 90px 31px no-repeat}
+#content #bvMenu dl:nth-of-type(6) .match{background: #fff url(../images/content3/bg6.png) 90px 32px no-repeat}
+#content #bvMenu dl:nth-of-type(7) .match{background: #fff url(../images/content3/bg7.png) 90px 31px no-repeat}
+#content #bvMenu dl:nth-of-type(8) .match{background: #fff url(../images/content3/bg8.png) 90px 30px no-repeat}

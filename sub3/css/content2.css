@@ -1,0 +1,77 @@
+#content .content_area{position: relative}
+#content .tabs{width: 1200px; margin: 0 auto; margin-bottom: 100px; position: relative; overflow: hidden;}
+#content .tabs on{background: #333; color: #fff}
+#content .tabs a.tab{position: absolute; left: 50%; top: 0; display: block; width:200px; font-size: 25px; color: #333; background: #f4f1f1; font-family: 'Nanum Gothic'; text-align: center; padding: 10px 10px}
+#content .tabs a.tab:hover{background: #333; color: #fff;}
+#content .tabs a.tab1{margin-left: -230px}
+#content .tabs a.tab2{margin-left: 40px}
+#content .tabs .contlist{display: none}
+#content .contlist section h4{font-size: 35px; font-family: 'Nanum Gothic'; margin-bottom: 37px}
+
+
+/* 설갱미 */
+#content .variety{margin-top: 120px}
+#content .variety section{margin-bottom: 150px}
+#content .variety section:nth-of-type(1){width: 1200px; height: 600px; background-image: url(../images/content2/bg_variety.jpg); background-attachment: fixed; position: relative}
+#content .variety section:nth-of-type(1) div{width: 920px; text-align: center; position: absolute; left: 50%; top: 50%; margin-left: -500px; margin-top: -193px; font-family: 'Nanum Myeongjo'; font-weight: 700; padding: 50px 40px; background: rgba(255,255,255,.5)}
+#content .variety section:nth-of-type(1) p:nth-of-type(1){font-size: 40px}
+#content .variety section:nth-of-type(1) span{font-size: 60px}
+#content .variety section:nth-of-type(1) p:nth-of-type(2){font-size: 25px; color: #ff9900; margin: 20px 0 40px 170px}
+#content .variety section:nth-of-type(1) p:nth-of-type(3){font-size: 16px; text-align: justify; line-height: 2em; font-family: '돋움'}
+
+#content .variety section:nth-of-type(2){position: relative; padding-top: 30px}
+#content .variety section:nth-of-type(2) img{float: left; position: absolute; left: 50px; top: -50px; box-shadow: 1px 1px 3px 2px rgba(0,0,0,.2)}
+#content .variety section:nth-of-type(2) ul{background: #f4f2ef; padding: 60px 50px 50px 375px; line-height: 1.7em; margin: 0 55px 0 125px; font-size: 18px; font-family: 'Nanum Gothic';}
+#content .variety section:nth-of-type(2) li{margin-bottom: 12px}
+#content .variety section:nth-of-type(2) span{font-weight: 700}
+
+#content .variety section:nth-of-type(3){text-align: center}
+#content .variety section:nth-of-type(3) h4{margin-bottom: 30px}
+#content .variety section:nth-of-type(3) p{font-size: 18px; font-weight: 700; font-family: 'Nanum Gothic'; margin-bottom: 50px}
+#content .variety section:nth-of-type(3) dl{text-align: justify; font-family: 'Nanum Gothic'; overflow: hidden; padding: 20px 30px; margin-top: 100px}
+#content .variety section:nth-of-type(3) dt{font-size: 25px; margin-bottom: 20px; font-weight: 700; position: relative;} 
+#content .variety section:nth-of-type(3) dt::after{content: ''; width: 16px; height: 16px; border-radius: 8px; background: #ff9900; position: absolute; left: 150px; top: -12px}
+#content .variety section:nth-of-type(3) .super2 dt::after{left: 105px}
+#content .variety section:nth-of-type(3) dd{font-size: 16px; line-height: 2em}
+#content .variety .super{overflow: hidden; padding: 60px 0} 
+#content .variety .super>div{float: left; height: 250px; margin: 0 50px; border: 1px solid #ccc;}
+#content .variety .super span{display: block}
+#content .variety .super1{border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding-right: 30px}
+#content .variety .super3{border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+#content .variety .super3>div img{float: left; margin: 40px 10px}
+#content .variety .super3>div img:nth-of-type(2){margin: 65px 10px 0 10px}
+#chart19{padding: 0 30px 0 70px}
+#chart11{position: relative}
+#chart11::before{content: ''; display: block; width: 190px; height: 13px; background: url(../images/content2/nmrice.png); position: absolute; left: 58px; top: 125px}
+#chart11::after{content: ''; display: block; width: 217px; height: 13px; background: url(../images/content2/sgrice.png); position: absolute; right: 58px; top: 70px}
+
+/* 생쌀발효법 */
+#content .ferment{margin-top: 120px}
+#content .ferment h4{font-size: 30px; font-family: 'Nanum Gothic'; margin-bottom: 37px}
+#content .ferment section{margin-bottom: 150px}
+#content .ferment section:nth-of-type(1){width: 1200px; height: 600px; background-image: url(../images/content2/bg_ferment.jpg); background-attachment: fixed; position: relative}
+#content .ferment section:nth-of-type(1) div{width: 920px; text-align: center; position: absolute; left: 50%; top: 50%; margin-left: -500px; margin-top: -177px; font-family: 'Nanum Myeongjo'; font-weight: 700; padding: 50px 45px; background: rgba(255,255,255,.5)}
+#content .ferment section:nth-of-type(1) p:nth-of-type(1){font-size: 40px}
+#content .ferment section:nth-of-type(1) p:nth-of-type(1) span{font-size: 60px}
+#content .ferment section:nth-of-type(1) p:nth-of-type(2){font-size: 25px; color: #ff9900; margin: 20px 0 40px 170px}
+#content .ferment section:nth-of-type(1) p:nth-of-type(3) {font-size: 16px; text-align: justify; line-height: 2em; font-family: '돋움';}
+
+#content .ferment section:nth-of-type(2){margin-bottom: 150px}
+#content .ferment section:nth-of-type(2) p{font-size: 16px; padding: 0 50px 30px 50px; line-height: 2em}
+#content .ferment>section:nth-of-type(2) span{font-size: 20px}
+#content .patent{background: url(../images/content2/bg_patent.jpg) no-repeat; padding: 35px 0; margin-bottom: 150px}
+#content .patent p:nth-child(1){font-family: 'Nanum Gothic'; font-size: 25px; text-align: center; margin-bottom: 40px}
+#content .patent ul{overflow: hidden; width: 1100px; margin: 0 auto}
+#content .patent li{background: #fff; float: left; line-height: 1.5em; text-align: center; width: 180px; height: 230px; font-family: '돋움'; font-size: 13px; margin: 20px 10px; padding: 30px 10px 0 10px; box-shadow: 1px 2px 2px 1px #ccc}
+#content .patent li p:nth-of-type(1){font-size: 14px; font-weight: bold; margin-bottom: 10px}
+#content .patent li:nth-of-type(3) p:nth-of-type(1){margin-bottom: 20px}
+#content .patent li:nth-of-type(4) p:nth-of-type(1){margin-bottom: 20px}
+#content .patent li:nth-of-type(5) p:nth-of-type(1){margin-bottom: 20px}
+#content .patent li img{width: 70px; margin-bottom: 20px}
+
+#content .ferment>section:nth-of-type(2){overflow: hidden}
+#content .ferment>section:nth-of-type(2) p:nth-of-type(1){margin-bottom: 50px}
+#content .ferment>section:nth-of-type(2) dl{float: left; width: 220px; margin: 10px 30px; position: relative; font-family: 'Nanum Gothic'; text-align: center; line-height: 2em; padding: 60px 10px }
+#content .ferment>section:nth-of-type(2) dl:nth-of-type(1){padding: 40px 10px}
+#content .ferment>section:nth-of-type(2) dl::after{content: ''; width: 240px; height: 240px; background:rgba(255,153,0,.5); border-radius: 120px; position: absolute ; left: 0; top: 0; z-index: -1}
+#content .ferment>section:nth-of-type(2) dt{font-size: 25px; margin-bottom: 20px}

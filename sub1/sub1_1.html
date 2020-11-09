@@ -1,0 +1,117 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>국순당-국순당개요</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="common/css/sub1common.css">
+    <link rel="stylesheet" href="css/content1.css">
+    
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/941ac268b7.js" crossorigin="anonymous"></script>
+    <!--[if IE9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+</head>
+
+<body>
+ 
+   <? include "../common/sub_head.html" ?>
+   <? $_GET['num']=1;
+      include "common/sub_nav.html"; 
+   ?>
+   
+<!-- 본문콘텐츠영역 -->
+    
+    <article id="content">
+        
+        <div class="title_area">
+            <div class="lineMap">
+                <span>home </span>&gt;<span> 회사소개 </span>&gt;<strong> 국순당개요</strong>
+            </div>
+            <div class="title_con">        
+                <h2>국순당 개요</h2>
+                <p>국순당은 술을 빚기 전에 먼저 사람을 생각하는 마음으로 우리술 문화를 되살리며,<br> 
+                    한국을 대표하는 세계적 명주를 만들기 위해 노력하고 있습니다.</p>
+            </div>   
+        </div>
+                      
+                                       
+        <div class="content_area">
+            <div class="intro">
+                <p>좋은 술의 고집</p>
+                <p>전통은 예로부터 지금까지 전해지며 공감 되는 가치의 합입니다. <br>
+                    우리술을 통해 전해지는 제법과 특성을 넘어 <br>
+                    건강하게 즐기던 우리술의 문화까지 국순당 술에 담아 전하고자 합니다.</p>           
+            </div>
+            <div class="philo philo1">
+                <img src="images/content1/philo1_artisan.jpg" alt="">
+                <div class="txt">
+                    <p>전통을 오늘에 맞게</p>
+                    <h3>법고창신</h3>
+                    <p>국순당은 지난 1952년 창업이래 우리 전통주의 근본인 누룩의 
+                    고유한 제조법을 계승, 발전시키는데 주력하여 현대인의 입맛에 
+                    맞게 끊임없이 개선해 왔습니다.<br>
+                    30년 전통의 부설연구소는 국내 유일의 전통 누룩 연구소로
+                    전통주의 복원에 앞장서고 있습니다.
+                    </p>            
+                </div>
+                <ul>
+                    <li><img src="images/content1/label1.jpg" alt="백세주 주류최초 대한민국 우수 문화상품 지정"></li>
+                    <li><img src="images/content1/label2.jpg" alt="우리술 복원 사업을 통해 다시 태어난 천 년 전 우리술"></li>
+                </ul>            
+            </div>
+
+            <div class="philo2">                
+                <div class="txt">
+                    <p>전통주 업계 최초로 환경부 지정 녹색기업 선정</p>
+                    <h3>녹색기업</h3>
+                    <p>좋은술의 품질을 넘어 더불어 함께 사는 환경까지 생각합니다.
+                    맑은 공기와 청정한 자연수 그리고 술 빚는 정성과 자연이 어우러진 
+                    횡성에 국순당 양조장이 있습니다. 
+                    이산화탄소 발생이 적은 친환경 생쌀발효법을 사용하고, 
+                    용기 경량화를 통하여 탄소 소비를 최소화합니다.
+                    </p>                     
+                </div>   
+                <img src="images/content1/philo2_eco.jpg" alt="">    
+                <ul>
+                    <li><img src="images/content1/label3.jpg" alt="전 품목 haccp인증"></li>
+                    <li><img src="images/content1/label4.jpg" alt="녹색기업 지정"></li>
+                    <li><img src="images/content1/label5.jpg" alt="ISO9001,ISO14001획득"></li>
+                </ul>            
+            </div>
+
+            <div class="philo philo3">
+                <img src="images/content1/philo3_contribution.jpg" alt="">
+                <div class="txt">
+                    <p>전통주 대표기업으로서 사회적 책임</p>
+                    <h3>사회공헌</h3>
+                    <p>예로부터 우리 조상들은 복날 시원한 물가에서 술과 고깃국을 
+                    먹으며 더위를 이기는 복달임 문화를 즐겼습니다.
+                    국순당은 어르신들이 무더운 무더운 여름철을 건강하게 보내시길
+                    바라는 마음에서 복달임 음식과 술로 삼계탕과 백세주를 
+                    대접하는 자리 마련하고 있습니다.
+                    </p> 
+                </div>     
+            </div>             
+        </div>        
+    </article>
+   
+    <!-- script src 자리 -->
+    
+     <? include "../common/sub_foot.html" ?>
+
+    <script src="js/scroll_move.js"></script>
+  
+</body>
+</html>

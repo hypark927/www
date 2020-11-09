@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* font-family: 'Nanum Gothic' ; 'Nanum Myeongjo'*/ 
+
+/* CSS Reset */
+
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%}
+
+body{background: #f4f1f1; font-family: "돋움", Dotum,"굴림",Gulim, sans-serif; font-size: 14px; color: #333}
+a{color: #333; text-decoration: none}
+
+.hidden{display: block; position: absolute; left: -1000%; width: 1px; height: 1px; overflow: hidden; color: #fff}
+input{border: 0; background: none}
+
+/*
+    .member_tab{padding: 30px 0;border-top: 1px solid #333}
+    .member_tab a{font-size: 24px;padding: 10px;margin: 0 10px;color: #aaa;}
+    .member_tab a.on{color: #000;border-bottom: 2px solid #000;font-weight: bold}
+    .member_tab span{font-size: 24px;padding: 10px;margin: 0 10px;color: #000;font-weight: bold}
+*/
+
+/* 약관동의 */
+.fmember_wrap{overflow: hidden; width: 900px; margin: 0 auto; padding: 60px 50px; background: #fff; margin-top: 80px; margin-bottom: 100px; border: 1px solid #ccc; border-radius: 10px}
+    .join{text-align: left}
+    .join h4{font-size: 25px; margin-top: 60px; padding-left: 17px; font-family: 'Nanum Myeongjo'; position: relative}
+.join h4::before{content: ''; display: block; width: 6px; height: 26px; background: #ff9900; position: absolute; left: 0; top: 1px}
+    .join .policy{line-height: 1.5em; padding: 15px; overflow-y: scroll; height: 80px; margin: 10px 0; border: 1px solid #ccc; background: #fff; font-size: 13px}
+    .join .button{text-align: center;margin-top: 30px}
+.join .button .allcheck{display: inline-block;width: 150px;line-height: 24px;padding: 10px 0;border: none;background: #ff9900; color: #fff; font-size: 14px;}
+    .join .button .ok,.join .button button{display: inline-block; width: 150px; line-height: 24px; padding: 10px 0;border: none;background: #333; color: #fff;font-size: 14px;cursor: pointer}
+.join .button .ok{width: 220px}
+    .join .button .cancel{display: inline-block;width: 150px;line-height: 24px;padding: 10px 0;border: none;background: #999;color: #fff;font-size: 14px;cursor: pointer}
+
+
+/* 회원가입 영역 */
+.join_wrap{width: 720px; margin: 0 auto; overflow:hidden; font-size: 16px; padding: 60px 40px; background: #fff; margin-top: 80px; margin-bottom: 100px; border: 1px solid #ccc; border-radius: 10px} 
+.join_wrap h1{display: block; width: 150px; margin: 0 auto; margin-bottom: 30px}
+.join_wrap h2{color: #666; font-size: 22px; font-family: 'Nanum Myeongjo'; margin-bottom: 30px; text-align: center}
+.join_form{overflow: hidden; width: 600px; margin: 0 auto;}
+.join_wrap ul{overflow: hidden; margin-bottom: 10px}
+.join_wrap ul li input{font-size: 16px; padding: 20px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 3px; width: 558px}
+.join_wrap ul li input:focus,.join_form ul li input:active{outline: 1px solid #ff9900; outline-offset: -1px}
+.join_wrap li{position: relative; box-sizing: border-box}
+.join_wrap li span{position: absolute; width: 160px; right: 10px; top: 9px; font-size: 13px}
+.join_form .phone select{width: 166px; padding: 19px; font-size: 16px}
+.join_form .phone input{font-size: 16px; padding: 20px;  width: 157px;}
+.join_form .email input{padding: 20px; width: 245px;}
+
+.submit input{ text-align: center; padding: 20px 0; float: left; cursor: pointer; transition: all .3s; box-sizing: border-box}
+.submit #submitGo{width: 330px; margin-right: 20px; background: #ff9900; color: #fff; border-radius: 5px; font-size: 15px; }
+.submit #submitGo:hover{background: #333}
+.submit .reset_form{width: 250px; background: #ccc; color: #333; border-radius: 5px;  font-size: 15px; }
+.submit .reset_form:hover{background: #333; color: #fff }

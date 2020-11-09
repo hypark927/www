@@ -1,0 +1,28 @@
+/* font-family: 'Nanum Myeongjo' ; font-family: 'Nanum Gothic'*/
+#content{line-height: 1.8em}
+#content h2{background: url(../images/sub2/sub2ttlx2.jpg) center no-repeat; background-size: cover; text-align: center; margin-top: 50px; padding: 40px 0; color: #fff; font-family: 'Nanum Gothic'; font-size: 26px}
+#content h3{font-family: 'Nanum Gothic'; font-size: 18px; font-weight: 700; padding: 10px 15px}
+
+#content .intro{width: 100%; margin: 0 auto; margin-bottom: 20px; padding: 30px 0; background: #f4f2ef}
+
+#content .intro p{font-family: 'Nanum Gothic'; font-size: 15px; padding: 10px 15px; text-align: justify; line-height: 1.7em}
+
+#content ul.pdt_list{padding: 5px 10px; overflow: hidden; margin-bottom: 20px}
+#content .pdt_list li{overflow: hidden; float: left; width: 50%; margin-bottom: 15px}
+#content .pdt_list img{width: 100%}
+#content .pdt_list a{display: block; padding: 0 5px}
+#content .pdt_list span{display: block; padding: 10px 0; text-align: center; font-size: 16px; background: #f4f2ef}
+
+#content .pdt_info{}
+#content .pdt_info .info{background: #fff; width: 90%; position: absolute; left: 50%; top: 40%; margin-left: -45%; display: none; z-index: 20; font-family: 'Nanum Gothic'; line-height: 1.7em; text-align: justify;}
+#content .pdt_info p{padding: 0 10px}
+#content .pdt_info p:nth-of-type(1){font-size: 16px; margin: 20px 0 10px 0}
+#content .pdt_info p:nth-of-type(1) span{display: block; font-size: 24px; font-weight: 700; padding-top: 5px}
+#content .pdt_info p:nth-of-type(2){font-size: 15px; margin-bottom: 10px}
+#content .pdt_info dl{color: #666; padding: 20px 10px}
+#content .pdt_info dt{float: left; width: 35%; font-weight: bold}
+#content .pdt_info dd{margin-left: 35%; width: 65%; margin-bottom: 6px}
+#content .close{display: block; width: 40px; height: 40px; border-radius: 20px; background: #ff9900; font-size: 20px; font-weight: bold; text-align: center; color: #fff; position: absolute; right: -18px; top: -18px; z-index: 30}
+#content .close>span{display: block; margin-bottom: 7px}
+
+.box{width: 100%; height: 100%; position: fixed; left: 0; top: 0; background: rgba(0,0,0,.7); display: none; z-index: 10}

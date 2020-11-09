@@ -1,0 +1,28 @@
+#content .content_area{}
+#content .content_area h3{font-size: 30px; font-family: 'Nanum Gothic'; color: #333}
+#content .content_area h3 span{color: #ff9900; padding-right: 5px}
+
+#content .content_area #mapSeoul{width:1200px; height: 560px; margin: 0 auto; margin-bottom: 50px}
+#content .content_area .map{margin: 20px 0 100px 0; border: 1px solid #ccc}
+#content .content_area .map dl{font-size: 18px; font-family: 'Nanum Gothic'; color: #333; margin: 30px 0 30px 30px; overflow: hidden; position: relative;}
+#content .content_area .map dt{float: left; width: 170px}
+#content .content_area .map dt span{padding-left: 12px; font-weight: 700}
+#content .content_area .map dd::before{content: ""; display: block; width: 1px; height: 16px; background: #ccc; position: absolute; left: 135px; top: 1px}
+#content .content_area .map dd{float: left}
+#content .content_area .map i{color: #ff9900}
+
+
+#content .content_area .tbl_wrap{width: 100%; margin-bottom: 100px}
+
+#content .content_area .traffic tbody span{color: green}
+#content .content_area .tbl2{margin-bottom: 170px}
+
+#content .content_area table{width: 100%; font-size: 16px; font-family: 'Nanum Gothic'; color: #333; margin-top: 20px; border-collapse: collapse;}
+#content .content_area tr{border-bottom: 1px solid #ccc}
+#content .content_area thead{border-top: 1px solid #666}
+#content .content_area thead tr th{background: #f4f1f1; padding: 25px 0}
+#content .content_area thead tr th:nth-last-of-type(1){border-left: 1px solid #ccc}
+#content .content_area tbody{line-height: 1.5em}
+#content .content_area tbody tr{}
+#content .content_area tbody tr th{padding: 35px 10px}
+#content .content_area tbody tr td{padding-left: 25px; border-left: 1px solid #ccc}

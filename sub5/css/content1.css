@@ -1,0 +1,37 @@
+#content section{margin-bottom: 170px}
+#content section h3{font-family: 'Nanum Gothic'; color: #333; font-size: 30px; margin-bottom: 37px}
+
+#content section:nth-of-type(1){overflow: hidden}
+#content section:nth-of-type(1) img{float: left}
+#content section:nth-of-type(1) div{overflow: hidden; width: 500px; padding: 110px 50px; text-align: justify; float: left}
+#content section:nth-of-type(1) div p{font-size: 18px; line-height: 2em}
+#content section:nth-of-type(1) div span{font-weight: 700; font-size: 18px; color: #ff9900}
+#content section:nth-of-type(1) div:nth-of-type(2){padding: 46px 50px}
+#content section:nth-of-type(1) div:nth-of-type(2) p:nth-of-type(1){margin-bottom: 20px}
+
+#content section:nth-of-type(2){overflow: hidden}
+#content section:nth-of-type(2) dl{float: left; background: #ece9e4; width: 310px; text-align: center; margin: 40px 10px; line-height: 2em; padding: 40px 35px; position: relative}
+#content section:nth-of-type(2) dl::after{font-size: 120px; color: #ccc; position: absolute; left: 260px; top: 5px}
+#content section:nth-of-type(2) dl:nth-of-type(1)::after{content: "1"}
+#content section:nth-of-type(2) dl:nth-of-type(2)::after{content: "2"}
+#content section:nth-of-type(2) dl:nth-of-type(3)::after{content: "3"}
+
+#content section:nth-of-type(2) dt{color: #ff9900; margin-bottom: 30px;}
+#content section:nth-of-type(2) dd{font-size: 16px}
+
+#content section:nth-of-type(3){overflow: hidden}
+#content section:nth-of-type(3) li{float: left; margin-right: 30px; background: #ece9e4}
+#content section:nth-of-type(3) li span{font-weight: 700}
+#content section:nth-of-type(3) li:nth-of-type(3){margin-right: 0}
+#content section:nth-of-type(3) li img{width: 380px}
+#content section:nth-of-type(3) dt{position: relative}
+#content section:nth-of-type(3) dt::after{content: ""; width: 40px; height: 2px; background: #333; position: absolute; left: 50%; top: 60px; margin-left: -20px}
+#content section dl{margin: 20px 0; font-family: 'Nanum Gothic'; color: #333; padding: 20px 30px}
+#content section dt{font-size: 25px; margin-bottom: 60px; text-align: center}
+#content section dd{font-size: 15px; line-height: 2em}
+
+#content section:nth-of-type(4){}
+#content section:nth-of-type(4) img{float: left; margin-right: 40px}
+#content section:nth-of-type(4) p{line-height: 2em; font-family: 'Nanum Gothic'; color: #333; font-size: 18px; padding-left: 20px}
+#content section:nth-of-type(4) p:nth-of-type(1){font-weight: 700; font-size: 20px}
+

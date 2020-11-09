@@ -1,0 +1,46 @@
+#content .content_area{}
+
+#content .intro{overflow: hidden; margin-bottom: 50px}
+#content .intro div{line-height: 2em; background: #ece9e4; font-family: 'Nanum Myeongjo'; font-weight: 700; color: #666; font-size: 18px; position: relative; margin: 50px 0 100px 0}
+#content .intro div span{color: #ff9900}
+#content .intro div:nth-of-type(1){width: 640px; margin-left: 260px ; padding: 50px 90px; border-bottom-right-radius: 40px}
+#content .intro div img{position: absolute}
+#content .intro div:nth-of-type(1) img{left: -190px; top: -35px}
+#content .intro div:nth-of-type(2) img{right: -110px; bottom: -40px}
+#content .intro div:nth-of-type(2){width: 670px; text-align: right; margin-left: 170px; padding: 50px 110px 50px 80px; border-top-left-radius: 40px}
+
+#content section{margin-bottom: 200px}
+#content section h3{text-align: center; font-family: 'Nanum Gothic'; color: #333; font-size: 35px; margin-bottom: 100px}
+#content section ul{overflow: hidden}
+#content section li{float: left; position: relative; overflow: hidden; margin-right: 34px}
+#content section li:nth-of-type(3){margin-right: 0}
+#content section li span{display: block; width: 350px; height: 400px; border: 1px solid #ccc; position: absolute; z-index: 2; left: 12px; top: 10px}
+#content section li p{font-family: 'Nanum Myeongjo'; color: #fff; font-size: 18px; position: absolute; z-index: 2; left: 135px; top: 270px; transition: all .4s; opacity: 0}
+#content section li:hover p{transform: translateY(-15px); opacity: 1}
+#content section li img{transform: scale(1); transition: all .4s}
+#content section li:hover img{transform: scale(1.1)}
+
+#content section li a{display: block; width: 154px; background: rgba(0,0,0,.3); text-align: center; font-family: 'Nanum Gothic'; color: #fff; font-size: 20px; padding: 15px 0; border: 1px solid #fff; position: absolute; z-index: 2; left: 50%; top: 50%; margin-top: -27px; margin-left: -77px ; transition: all .3s}
+#content section li a:hover{background: #fff; color: #333}
+#content section li span:nth-of-type(2){display: block; width:375px; height: 424px; background: rgba(0,0,0,0); position: absolute; z-index: 1; left: 0; top: 0}
+#content section li:hover span:nth-of-type(2){background: rgba(0,0,0,.4)}
+
+#content .product_info{}
+#content #box{width: 100%; height: 100%; position: fixed; left: 0; top: 0; background: rgba(0,0,0,.7); display: none; z-index: 10}
+#content .info{border: 1px solid #ccc; width: 1198px; height: 555px; position: fixed; left: 50%; top: 50%; margin-left: -600px; margin-top:-277px; display: none; z-index: 20}
+#content .info1{background: #fff url(../images/content1/product_bg1.png) 10px 55px no-repeat;}
+#content .info2{background: #fff url(../images/content1/product_bg2.png) 15px 55px no-repeat}
+#content .info3{background: #fff url(../images/content1/product_bg3.png) 15px 55px no-repeat}
+#content .close{display: block; width: 40px; height: 40px; border-radius: 20px; background: #ff9900; font-size: 20px; font-weight: bold; text-align: center; color: #fff; position: absolute; right: -18px; top: -18px; z-index: 30}
+#content .close>span{display: block; margin-bottom: 7px}
+#content .info h4{font-size: 35px; font-family: 'Nanum Gothic'; color: #333; margin: 50px 10px 30px 350px}
+#content .info h4 span{display: block; font-family: 'Nanum Myeongjo'; font-size: 18px; color: #ff9900; margin-bottom: 10px}
+#content .info p{font-size: 16px; font-family: 'Nanum Gothic'; color: #666; line-height: 1.7em; margin: 20px 10px 25px 350px}
+#content table{width: 730px; font-size: 16px; font-family: 'Nanum Gothic'; color: #333; margin: 20px 20px 60px 350px; border-collapse: collapse}
+#content tr{border-bottom: 1px solid #ccc; border-top: 1px solid #ccc}
+#content tr:hover{background: #f4f1f1}
+#content tbody{line-height: 1.7em}
+#content tbody tr span{font-size: 14px}
+#content tbody tr th{padding: 15px 0}
+#content tbody tr:nth-of-type(3) th{padding: 30px 0}
+#content tbody tr td{padding: 0 20px; position: relative}
