@@ -31,7 +31,7 @@
 #content dd{font-size: 22px; margin-bottom: 20px}
 
 #content ul{overflow: hidden; perspective:100%;}
-#content ul li {float: left; width: 15.7%; margin-right: .5%; background: rgba(0,150,255,0.3); box-sizing: border-box; padding: 2.5% 2%; height: 650px; transition: all .3s; border-radius: 15px}
+#content ul li {float: left; width: 15.7%; margin-right: .5%; background: rgba(0,150,255,0.3); box-sizing: border-box; padding: 2% 1%; height: 650px; transition: all .3s;}
 #content ul li:hover{background: rgba(0,150,255,0.6)}
 #content ul li img{ transform:rotateY(0deg); transition:all .6s}
 #content ul li:hover img{transform:rotateY(360deg);}

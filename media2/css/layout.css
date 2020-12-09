@@ -1,0 +1,195 @@
+/* font-family: 'PT Serif', serif;  */
+body {
+    font-family: "PT Serif",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+.container {
+    width: 90%;
+ }
+.container-fluid {
+     padding-right: 0; 
+     padding-left: 0; 
+}
+section{overflow: hidden;padding: 70px 0;}
+.bg-beige{background-color: #f4f3f0;}
+
+.navbar h1 img {
+    width: 150px;
+    margin-top: -30px;
+}
+.navbar-brand{height: 50px}
+.navbar_header h1{margin-top: 0;}
+.navbar-nav {
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+.navbar-nav li {
+    margin: 0 10px;
+}
+.navbar-default .navbar-nav a {
+    color: #333;
+    font-family: 'PT Serif';
+    font-size: 1.3em;
+    background: none;
+}
+.navbar-default .navbar-nav>.active>a {    
+    background: #FCEADE;
+}
+.navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #FCEADE;
+    font-family: 'PT Serif';
+    color: #333;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: underline;
+}
+.navbar-toggle {
+    margin-top: 18px;
+    margin-right: 30px;
+}
+
+#visual{margin-top: -30px}
+.carousel-inner{
+    left: 50%;
+    transform: translateX(-50%) ;
+}
+.carousel-inner>.item>img{
+    max-width: inherit;
+}
+.carousel-control .icon-next:before, .carousel-control .icon-prev:before {
+    font-size: 3em;
+}
+.carousel-caption {
+    top: 420px;
+    padding: initial;
+    text-shadow: 2px 2px 2px #333;	
+}
+.carousel-caption p {
+    font-size: 50px;
+    font-weight: 600;
+}
+.carousel-indicators li {
+    width: 40px;
+    height: 7px;    
+}
+.carousel-indicators {
+    bottom: 90px;
+}
+.carousel-indicators .active {
+    width: 40px;
+    height: 7px;   
+}
+.row{margin: 30px 0 0 0}
+.product1 a, .product2 a, .product3 a{display: block; padding: 2% 4%; text-align: center; height: auto}
+h3 {
+    background-color: #FCEADE;
+    font-size: 3em;
+    font-family: 'PT Serif';
+	margin-top: 6%;
+	margin-bottom: 2%;
+}
+h4 {color: chocolate; font-size: 1.7em; font-family: serif; font-weight: bold; margin-bottom: 2%;}
+strong {
+    font-size: 1.3em;
+	font-family: serif;
+}
+
+.flex-column {
+    -ms-flex-direction: column!important;
+    flex-direction: column!important;
+}
+ul,li{list-style: none}
+
+#slogan{background: url(../images/bgatch02.jpg) center center no-repeat; background-attachment: fixed; padding: 4% 0 }
+#slogan p{font-size: 60px; font-family: 'Homemade Apple'}
+#slogan span {font-size: 1.4em;}
+#pdt ul li:hover{background: #f8f8f8;}
+#pdt a img{transition: all .4s}
+#pdt a:hover img{transform: scale(1.1);}
+#brand .philo1, .philo2{/*background: #f4e7d9;*/ padding: 1.5%}
+#appointment{}
+#appointment .panel-group .panel {
+    padding-left: 0;
+}
+#appointment .panel-default>.panel-heading {
+    background-color: #333;
+    color: #fff;
+    padding: 2% 1.5%;
+}
+#appointment .panel-default>.panel-heading:hover {
+    background-color: #333; /* #fceade */
+	color: #fff;
+}
+
+#view{}
+#view ul{margin: 0; padding: 0}
+#view ul li{margin: 0; padding: 0; position: relative; overflow: hidden; }
+#view ul li .portfolio-box-caption{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); opacity: 0; transition: all .3s; background: rgba(20,20,20,.7); width: 100%; height: 100%; color: #fff}
+#view ul li:hover .portfolio-box-caption{opacity: 1}
+#view ul li img{transition: all .5s}
+#view ul li:hover img{transform: scale(1.2)}
+.portfolio-box-caption .view_text{padding-top: 25%}
+
+footer {
+    background-color: #222;
+	padding: 2% 0;
+	color: #ccc;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 65px;
+    right: 40px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+	transition: all .2s;
+}
+
+#myBtn:hover {
+  background: rgba(0,0,0,.9);
+}
+
+.padding-0{
+    padding: 0!important;
+}
+
+
+@media screen and (max-width:768px){
+	.carousel-inner{
+        height: 600px!important;
+    }
+    .carousel-inner>.item>img{
+        height: 600px!important;
+    }
+	.carousel-indicators {
+    bottom: 20px;
+	}
+    .carousel-caption{
+        top: 270px;
+        font-size: 16px;
+    }
+    .carousel-caption p{
+        font-size: 35px;
+        line-height: 1.4em!important;
+    }
+	
+}
+
+/* Works in Safari, IE9, Google Chrome */
+::selection { background-color: #222;
+        color: #fff;                   
+}                              
+/* Mozilla based browsers */
+::-moz-selection { background-color: #222; 
+ color: #fff;  
+}                              

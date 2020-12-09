@@ -76,6 +76,7 @@
     #content .char_all li .item3{display: none}
 }
 
+
 /* 모바일 */
 @media screen and (max-width:640px) {
 .subTitle {font-size: 1.5em}
@@ -83,6 +84,7 @@
     #content .char_all li:nth-of-type(6),#content .char_all li:nth-of-type(8){display: none}   
     #content .char_all{margin-bottom: 10%}
 }
+
 
 @media screen and (max-width:480px) {
     .clip_part .playBnt {
